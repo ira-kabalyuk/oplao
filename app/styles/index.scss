@@ -1,8 +1,10 @@
 $icon-font-path: '../fonts/';
 
+body {
+	font-family: 'Fira Sans', sans-serif;
+}
 
-.top-banner-wrap {
-  margin: 10px auto;
-  width: 728px;
-  height: 90px;
+.pagewrap {	
+	max-width: 1520px;
+	margin: 0 auto;
 }
