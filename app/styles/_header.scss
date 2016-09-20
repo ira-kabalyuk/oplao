@@ -11,6 +11,10 @@ $icon-font-path: '../fonts/';
   background: #1a1e22;  
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .menu-wrap {
   display: flex;
   justify-content: space-between;
@@ -19,6 +23,7 @@ $icon-font-path: '../fonts/';
 
 .menu-block {
   display: flex;
+  align-items: center;
 }
 
 .menu-list {
@@ -27,7 +32,7 @@ $icon-font-path: '../fonts/';
 }
 
 .menu-item {
-   padding: 16px 27px;
+   padding: 17px 27px;
 
    &:hover {
     background: #262b2e;
@@ -61,14 +66,22 @@ $icon-font-path: '../fonts/';
   align-items: center;
 }
 
-.settings-item {  
+.settings-item, .settings-item-options {  
   border-left: 1px solid #262b30;
   cursor: pointer;
-  padding: 16px 47px; 
+  padding: 17px 47px;
+
+  &:last-child {
+    border-right: 1px solid #262b30;
+  } 
 
   &:hover {
     background: #262b2e;
    }   
+}
+
+.settings-item-options {
+  padding: 14px 18px;
 }
 
 .settings-icon {
@@ -98,7 +111,7 @@ $icon-font-path: '../fonts/';
   cursor: pointer;
   color: #30353a;
   border: 1px solid #30353a;  
-  padding: 7px;
+  padding: 3px 7px;
   display: block;
   float: left;
 
@@ -116,4 +129,27 @@ $icon-font-path: '../fonts/';
   color: #1a1e22;
   border: 1px solid #88929c;
   background: #88929c;
+}
+
+.menu-button-wrap {
+  padding: 14px 90px;
+
+  &:hover {
+    background: #262b2e;
+  }
+
+}
+
+.burger {
+  background: transparent;
+  border: none;
+  height: 22px;
+}
+
+.burger-line {
+  width: 26px;
+  height: 1px;
+  margin: 4px 0;
+  background: #88929c;
+  display: block;
 }

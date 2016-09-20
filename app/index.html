@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oplao</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -20,9 +20,11 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="main"> 
-    <div class="top-banner-wrap">
-      <img src="http://placehold.it/728x90">
+  <div class="main">
+    <div class="pagewrap">
+      <div class="top-banner-wrap">
+        <img src="http://placehold.it/728x90">
+      </div>
     </div>
 
     <header class="header">      
@@ -31,6 +33,7 @@
           <div class="logo-block">            
               <a class="logo-link" href="#">              
                 <img class="logo" src="images/logo.png" alt="">
+                <img class="logo-mobile" src="images/logo-mobile.png" alt="">
               </a>
           </div>
 
@@ -43,17 +46,40 @@
             <ul class="settings-list">
               <li class="settings-item"><i class="settings-icon"></i></li>
               <li class="settings-item"><i class="share-icon"></i></li>
-              <li class="settings-item">
+              <li class="settings-item-options">
                 <span class="options">&deg;с</span>
                 <span class="options active">&deg;f</span>
               </li>
             </ul>
+            <div class="menu-button-wrap"> 
+              <button class="burger">
+                <i class="burger-line"></i>
+                <i class="burger-line"></i>
+                <i class="burger-line"></i>
+              </button>
+            </div>              
           </div>  
         </nav>
       </div>
     </header>
+    
+    <section class="section-1">
+      <div class="pagewrap">
+        <div class="location-wrap">
+          <div class="location-block">
+            <i class="location-icon"></i>
+            <div class="location-text-wrap">
+              <p class="location-name">Minsk weather, Belarus</p>
+              <p class="location-description">Today August 19, Friday. <span>12:10 AM</span></p>              
+            </div>
+          </div>
+          <div class="search-block">
+            
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <!--password popup end-->
   
     <!-- build:js scripts/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -74,9 +100,6 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/owl.carousel.js"></script>
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    
   </body>
 </html>

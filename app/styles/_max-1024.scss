@@ -1,2 +1,29 @@
 $icon-font-path: '../fonts/';
 
+@media only screen and (max-width:1024px) {
+
+	.pagewrap {
+		max-width: 728px;	
+	}
+
+	/*------------------------------header---------------------------*/	
+
+	.menu-item {
+		padding: 17px 14px;
+	}
+
+	.menu-link {
+		font-size: 13px;		
+	}
+
+	.settings-item {
+		padding: 17px 19px;
+	}
+
+	.menu-button-wrap {
+		padding: 14px 19px;
+	}
+
+	/*------------------------------header end---------------------------*/	
+	
+}	

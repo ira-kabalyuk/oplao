@@ -1,0 +1,35 @@
+$icon-font-path: '../fonts/';
+
+@media only screen and (max-width:735px) {
+
+	.top-banner-wrap {
+		display: none;
+	}
+
+	.pagewrap {
+		max-width: 100%;
+		padding: 0 10px;
+	}
+
+	/*------------------------------header---------------------------*/
+
+	.logo-mobile {
+  	display: block;
+	}
+
+	.logo {
+  	display: none;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.menu-button-wrap {
+		padding: 14px 10px;
+	}
+
+	/*------------------------------header end---------------------------*/	
+	
+}	
+

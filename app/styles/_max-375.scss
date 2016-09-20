@@ -3,8 +3,24 @@ $icon-font-path: '../fonts/';
 @media only screen and (max-width:375px) {
 
 	.pagewrap {
-		max-width: 290px;	
+		//max-width: 290px;	
 	}
+
+	/*------------------------------header---------------------------*/
+
+	.logo-block {
+		padding: 0 3px;
+	}	
+
+	.settings-item {
+		padding: 17px 15px;
+	}
+
+	.settings-item {
+		padding: 14px 15px;
+	}
+
+	/*------------------------------header end---------------------------*/	
 	
 }	
 

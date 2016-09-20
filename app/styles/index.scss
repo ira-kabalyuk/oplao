@@ -8,3 +8,43 @@ body {
 	max-width: 1520px;
 	margin: 0 auto;
 }
+
+.section-1 {
+	background: url(../images/bg-1.jpg);
+	background-size: cover;
+}
+
+.location-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.location-text-wrap {
+	margin-left: 20px;
+}
+
+.location-icon {
+	background: url(../images/location-icon.png);
+	width: 14px;
+	height: 21px;
+	display: inline-block;
+	float: left;
+}
+
+.location-name {
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 9px;
+}
+
+.location-description {
+	font-size: 16px;
+	font-weight: 300;
+	color: #66a6d4;
+
+	span {
+		color: #fff;
+	}
+}
