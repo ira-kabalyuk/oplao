@@ -3,7 +3,8 @@ $icon-font-path: '../fonts/';
 @media only screen and (max-width:1024px) {
 
 	.pagewrap {
-		max-width: 728px;	
+		max-width: 100%;
+		padding: 0 18px;
 	}
 
 	/*------------------------------header---------------------------*/	
@@ -32,7 +33,71 @@ $icon-font-path: '../fonts/';
 		.search-select {
 			padding: 0 23px 0 20px;
 		}
-		
+
+	}
+
+	.time-list {
+		flex-direction: column;
+	}
+
+	.time-item {
+		flex-direction: row;
+		margin-top: 15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+	}
+
+	.time-text {
+		margin-top: 0;
+		margin-left: 10px;
+	}
+
+	.weather-img {
+		width: 78px;
+		height: 60px;
+	}
+
+	.weather-text {
+		font-size: 67px;
+	}
+
+	.deg-c, .deg-f {
+		font-size: 19px;
+	}
+
+	.now-weather-block {	
+		width: 34%;
+	}
+
+	.weather-text-block {
+	padding-left: 10px;
+	}
+
+	.weather-img-block {
+		margin-top: 0;
+	}	
+
+	.info-block {
+		width: 46%;
+	}
+
+	.time-block {
+		width: 20%;
+	}
+
+	.info-item-text {
+		font-size: 15px;
+	}
+
+	.info {
+		font-size: 14px;
+	}
+
+	.time-text {
+		font-size: 15px;
 	}
 	
 }	

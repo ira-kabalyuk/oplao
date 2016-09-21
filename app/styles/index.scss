@@ -128,5 +128,265 @@ body {
 
 }
 
+.weather-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 75px 0;
+}
+
+.now-weather-block {
+	display: flex;
+	align-items: center;	
+	width: 40%;
+	justify-content: center;
+}
+
+.weather-img-block {
+	margin-top: 15px;
+}
+
+.weather-text-block {	
+	padding-left: 35px;	
+}
+
+.weather-text {
+	font-size: 102px;
+	color: #fff;
+	font-weight: 500;	
+	height: 90px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.deg-c, .deg-f {
+	font-size: 30px;
+  text-transform: uppercase;
+  vertical-align: super;
+  font-weight: 400;
+  color: #fff;
+  line-height: 100px;
+  display: inline-block;
+}
+
+.deg-f {
+	color: #66a9d8;
+}
+
+.info-block {
+	//display: flex;
+	//align-items: center;
+	border-right: 1px solid #26c3fb;
+	border-left: 1px solid #2693d4;
+	padding: 20px 0;
+	width: 42%;		
+}
+
+.info-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.info-item {
+	list-style: none;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.info-item-text {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 13px;
+	margin-top: 17px;	
+}
+
+.info {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.feels-icon {
+	background: url(../images/feels-like.svg) no-repeat;
+	background-size: 10px 22px;
+	width: 10px;
+	height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.humidity-icon {
+	background: url(../images/humidity.svg) no-repeat;
+	background-size: 14px 22px;
+	width: 14px;
+	height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pressure-icon {
+	background: url(../images/pressure.svg) no-repeat;
+	background-size: 12px 22px;
+	width: 12px;
+	height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.wind-icon {
+	background: url(../images/wind.svg) no-repeat;
+	background-size: 22px 22px;
+	width: 22px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.time-block {
+	width: 18%;	
+	//padding: 20px 0;
+}
+
+.time-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+
+.time-item {
+	list-style: none;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.time-text {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 18px;
+}
+
+.am-icon {
+	background: url(../images/sunrise.svg) no-repeat;
+	background-size: 48px 45px;
+	width: 48px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pm-icon {
+	background: url(../images/sunset.svg) no-repeat;
+	background-size: 48px 45px;
+	width: 48px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.lange-wrap {
+	background: linear-gradient(left, #266db4, #26bcf8);
+	width: 100%;
+	height: 70px;
+
+	&:hover {
+		background: linear-gradient(left, #5c92c7, #5ccdfa);
+	}
+
+}
+
+.lange-wrap {
+	display: flex;
+}
+
+.full-forecast-link {
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: auto;
+	
+	&:hover {
+		color: #fff;
+	}
+
+}
+
+.forecast-list {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-weight: 300;
+}
+
+.forecast-item {
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px 0;
+}
+
+.day-1 {
+	background: linear-gradient(left, #00d6a1, #00e994);
+}
+
+.day-2 {
+	background: linear-gradient(left, #00c4a8, #00e4a9);
+}
+
+.day-3 {
+	background: linear-gradient(left, #00d3c6, #00e0bf);
+}
+
+.data-block {
+	width: 236px;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #4deab8;
+	text-align: center;
+}
+
+.data-forecast-block {
+	padding-top: 7px;
+	width: 236px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.deg-value {
+	font-size: 16px;	
+
+	sup {
+		font-size: 14px;
+	}
+
+}
+
+.number-value {
+	font-size: 31px;
+	font-weight: 400;
+}
+
+.cloud-icon {
+	background: url(../images/cloud.svg) no-repeat;
+	background-size: 30px 19px;
+	width: 30px;
+	height: 19px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
 
 

@@ -1,15 +1,7 @@
 $icon-font-path: '../fonts/';
 
-@media only screen and (max-width:735px) {
-
-	.top-banner-wrap {
-		display: none;
-	}
-
-	.pagewrap {
-		max-width: 100%;
-		padding: 0 18px;
-	}
+@media only screen and (max-width:735px) {	
+	
 
 	/*------------------------------header---------------------------*/
 
@@ -29,10 +21,15 @@ $icon-font-path: '../fonts/';
 		padding: 14px 10px;
 	}
 
-	/*------------------------------header end---------------------------*/	
+	/*------------------------------header end---------------------------*/
+
+	.weather-wrap {
+		flex-direction: column;
+		padding: 30px 0;
+	}	
 
 	.location-wrap {
-		flex-direction: column;
+		flex-direction: column;		
 	}
 
 	.location-block {
@@ -42,6 +39,69 @@ $icon-font-path: '../fonts/';
 
 	.search-block {
 		//width: 100%;		
+	}
+
+	.now-weather-block,
+	.info-block,
+	.time-block {
+		width: 100%;
+	}
+
+	.now-weather-block {
+		justify-content: center;
+	}
+
+	.info-block {
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid #26c3fb;
+		border-bottom: 1px solid #2693d4;
+	}
+
+	.time-list {
+		flex-direction: row;
+	}
+
+	.time-item {
+		margin-top: 20px;
+
+		&:first-child {
+			margin-top: 20px;
+		}
+
+	}
+
+	.data-block,
+	.data-forecast-block {
+		width: 80px;
+	}
+
+	.data-block {
+		font-size: 13px;
+	}
+
+	.data-forecast-block {
+		flex-direction: column;
+		//align-items: flex-start;
+	}
+
+	.deg-value {
+		font-size: 14px;
+		order: 1;
+	}
+
+	.number-value {
+		font-size: 24px;
+
+		sup {
+		font-size: 10px;
+		}
+
+	}
+
+	.cloud-icon {
+		order: 0;
+		margin: 5px 0 12px 0;
 	}
 	
 }	

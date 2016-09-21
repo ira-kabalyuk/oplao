@@ -2,7 +2,18 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width:767px) {
 
-	
+	.top-banner-wrap {
+		display: none;
+	}	
+
+	.now-weather-block {
+		justify-content: flex-start;		
+	}
+
+	.data-block,
+	.data-forecast-block {
+		width: 200px;
+	}
 	
 }	
 
