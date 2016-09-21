@@ -8,7 +8,7 @@ $icon-font-path: '../fonts/';
 
 	.pagewrap {
 		max-width: 100%;
-		padding: 0 10px;
+		padding: 0 18px;
 	}
 
 	/*------------------------------header---------------------------*/
@@ -30,6 +30,19 @@ $icon-font-path: '../fonts/';
 	}
 
 	/*------------------------------header end---------------------------*/	
+
+	.location-wrap {
+		flex-direction: column;
+	}
+
+	.location-block {
+		order: 2;
+		margin-top: 30px;
+	}
+
+	.search-block {
+		//width: 100%;		
+	}
 	
 }	
 

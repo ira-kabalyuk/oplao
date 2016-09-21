@@ -1,0 +1,18 @@
+$icon-font-path: '../fonts/';
+
+@media only screen and (max-width:320px) {
+
+	.search-block {
+
+		.search-select {
+			width: 100%;
+		}
+
+		.search-button, .location-button {
+			width: 18%;
+		}
+
+	}
+	
+}	
+
