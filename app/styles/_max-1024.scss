@@ -99,5 +99,68 @@ $icon-font-path: '../fonts/';
 	.time-text {
 		font-size: 15px;
 	}
+
+	/*----------------------------------section 3-----------------------------------------*/
+
+	.popular-weather-list {
+		flex-wrap: wrap;
+	}
+
+	.popular-weather-item {
+
+		&:nth-child(1) {
+			width: 50%;
+		}
+
+		&:nth-child(2) {
+			width: 50%;
+			border-right: 1px solid #ebebeb;
+		}
+
+		&:nth-child(3) {
+			width: 33.3%;
+		}
+
+		&:nth-child(4) {
+			width: 33.3%;
+		}
+
+		&:nth-child(5) {
+			width: 33.3%;
+		}
+
+	}
+
+	/*----------------------------------section 3 end-----------------------------------------*/
+
+	/*----------------------------------section 4-----------------------------------------*/
+
+	.content-wrap {
+		flex-direction: column;
+	}
+
+	.left-column {
+		width: 100%;
+	}
+
+	.right-column {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 50px;
+
+		.content-block {
+			margin-top: 0;
+		}
+
+		.banner-wrap {
+			padding-top: 0;
+		}
+	}
+
+	.banner-lang-wrap {
+		display: none;
+	}
+
+	/*----------------------------------section 4 end-----------------------------------------*/
 	
 }	

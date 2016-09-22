@@ -103,6 +103,94 @@ $icon-font-path: '../fonts/';
 		order: 0;
 		margin: 5px 0 12px 0;
 	}
+
+	/*----------------------------------section 3-----------------------------------------*/
+	
+	.popular-weather-list {
+		flex-direction: column;
+	}
+	
+	.popular-weather-item {		
+		justify-content: flex-start;
+		padding: 23px 28px;		
+
+		&:nth-child(1) {
+			width: 100%;
+			border-right: 1px solid #ebebeb;
+		}
+
+		&:nth-child(2) {
+			width: 100%;
+			border-right: 1px solid #ebebeb;
+		}
+
+		&:nth-child(3) {
+			width: 100%;
+			border-right: 1px solid #ebebeb;
+		}
+
+		&:nth-child(4) {
+			width: 100%;
+			border-right: 1px solid #ebebeb;
+		}
+
+		&:nth-child(5) {
+			width: 100%;
+		}
+
+	}
+
+	.city-name {
+		display: inline-block;
+	}
+
+	.land-name {
+		display: inline-block;
+	}
+
+	/*----------------------------------section 3 end-----------------------------------------*/
+
+	/*----------------------------------section 4-----------------------------------------*/
+	
+	.local-weather-list {		
+		flex-direction: column;
+	}
+
+	.local-weather-item {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 23px 28px;
+
+		&:nth-child(4) {			
+			border-bottom: 1px solid #ebebeb;
+		}
+
+		&:nth-child(5) {
+			border-bottom: 1px solid #ebebeb;
+		}
+
+	}
+
+	.content-inside-block {
+		//text-align: center;
+		margin: 36px auto 0;
+	}
+
+	.content-button {
+		display: none;
+	}
+
+	.content-select {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.week-info-block {
+		display: none;
+	}
+
+
+	/*----------------------------------section 4 end-----------------------------------------*/
 	
 }	
 

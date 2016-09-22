@@ -9,6 +9,8 @@ body {
 	margin: 0 auto;
 }
 
+/*--------------------------------------------section-1------------------------------*/
+
 .section-1 {
 	background: url(../images/bg-1.jpg);
 	background-size: cover;
@@ -55,7 +57,7 @@ body {
 	background: #fff;
 	display: flex;
 	align-items: center;
-	width: 450px;
+	width: 447px;
 
 	.select-block {
 		position: relative;
@@ -74,6 +76,7 @@ body {
 		color: #e3e3e3;
 		padding: 0 78px 0 20px;
 		border: none;
+		margin-right: 3px;
 
 		option {
 
@@ -84,20 +87,20 @@ body {
 	.select-location-button {
 		background: #fff;
 		position: absolute;
-		top: 3px;
-		right: 6px;
+		top: 0;
+		right: 3px;
 		cursor: pointer;
 		z-index: 10;
-		width: 30px;
-		height: 15px;
+		width: 100px;
+		height: 25px;
 		display: inline-block;
 		pointer-events: none;
-		text-align: center;
+		text-align: right;
 	}
 
 	.location-button-icon {
-		background: url(../images/location-button-icon.png) no-repeat 50% 50%;
-		width: 7px;
+		background: url(../images/location-button-icon.png) no-repeat 7px 0;
+		width: 30px;
 		height: 8px;
 		display: inline-block;
 	}
@@ -289,32 +292,37 @@ body {
 }
 
 .lange-wrap {
-	background: linear-gradient(left, #266db4, #26bcf8);
+	background: linear-gradient(to right, #266db4, #26bcf8);
 	width: 100%;
 	height: 70px;
 
 	&:hover {
-		background: linear-gradient(left, #5c92c7, #5ccdfa);
+		background: linear-gradient(to right, #5c92c7, #5ccdfa);
 	}
 
 }
 
 .lange-wrap {
 	display: flex;
+	align-items: center;
+  justify-content: center;
 }
 
 .full-forecast-link {
 	color: #fff;
 	font-weight: 400;
 	font-size: 14px;
-	text-transform: uppercase;
-	margin: auto;
+	text-transform: uppercase;	
 	
 	&:hover {
 		color: #fff;
 	}
 
 }
+
+/*----------------------------------------section-1 end-------------------------------------*/
+
+/*----------------------------------------section-2-------------------------------------*/
 
 .forecast-list {
 	display: flex;
@@ -333,15 +341,15 @@ body {
 }
 
 .day-1 {
-	background: linear-gradient(left, #00d6a1, #00e994);
+	background: linear-gradient(to right, #00d6a1, #00e994);
 }
 
 .day-2 {
-	background: linear-gradient(left, #00c4a8, #00e4a9);
+	background: linear-gradient( to right, #00c4a8, #00e4a9);
 }
 
 .day-3 {
-	background: linear-gradient(left, #00d3c6, #00e0bf);
+	background: linear-gradient(to right, #00d3c6, #00e0bf);
 }
 
 .data-block {
@@ -384,9 +392,263 @@ body {
 	vertical-align: middle;
 }
 
+/*----------------------------------------section-2 end-------------------------------------*/
 
+/*----------------------------------------section-3-------------------------------------*/
 
+.popular-weather-list {
+	display: flex;
+	align-items: center;	
+}
 
+.popular-weather-item {
+	list-style: none;
+	display: flex;
+	width: 20%;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding: 23px 10px;
+	//height: 90px;
+	align-self: stretch;
 
+	&:last-child {
+	border-right: 1px solid #ebebeb;
+	}
+
+}
+
+	.popular-weather-img-block {
+		width: 60px;
+	}
+
+	.cloud-blue-icon {
+		background: url(../images/cloud-blue.svg) no-repeat;
+		background-size: 30px 19px;
+		width: 30px;
+		height: 19px;
+		display: block;
+		vertical-align: middle;
+		margin-bottom: 7px;
+	}
+
+	.city-deg-value {
+		font-size: 16px;
+		font-weight: 500;
+		color: #0880d5;
+		text-transform: uppercase;
+	}
+
+	.popular-weather-city-block {
+		
+	}
+
+	.city-name {
+		display: block;
+		color: #4c4c4c;
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 2px;
+	}
+
+	.land-name {
+		display: block;
+		color: #4c4c4c;
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+/*----------------------------------------section-3 end-------------------------------------*/
+
+/*----------------------------------------section-4 content-------------------------------------*/
+
+.content-wrap {
+	display: flex;	
+}
+
+.left-column {
+	width: calc(100% - 330px);
+}
+
+.right-column {
+	width: 300px;
+	margin-left: 30px;	
+}
+
+.content-block {
+	margin-top: 63px;
+	color: #4c4c4c;
+}
+
+.content-title {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;		
+	line-height: 35px;
+	margin-bottom: 23px;
+	padding-right: 25px;
+}
+
+.title-block {
+	padding-left: 25px;
+	display: inline-block;
+	border-left: 1px solid #ebebeb;
+	line-height: 35px;
+}
+
+.eye-blue-icon {
+	background: url(../images/eye-blue.svg) no-repeat;
+	background-size: 16px 10px;
+	width: 16px;
+	height: 10px;
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.title-text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	color: #9c9c9c;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.map-block {
+	width: 100%;
+	height: 250px;
+
+	.map-img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.banner-wrap {
+	width: 300px;
+	height: 250px;
+	padding-top: 57px;
+}
+
+.banner-lang-wrap {
+	width: 300px;
+	height: 600px;
+	padding-top: 57px;
+}
+
+.local-weather-list {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #ebebeb;
+}
+
+.local-weather-item {
+	list-style: none;
+	width: 33.3%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 23px 30px;   
+  align-self: stretch;
+  border-bottom: 1px solid #ebebeb;
+
+  &:nth-child(1) {		
+		border-right: 1px solid #ebebeb;
+  }
+
+  &:nth-child(2) {		
+		border-right: 1px solid #ebebeb;
+  }
+
+  &:nth-child(4) {
+		border-bottom: none;
+		border-right: 1px solid #ebebeb;
+  }
+
+  &:nth-child(5) {
+		border-bottom: none;
+		border-right: 1px solid #ebebeb;
+  }
+
+  &:nth-child(6) {
+		border-bottom: none;
+  }
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.content-inside-block {
+	margin-top: 36px;	
+}
+
+.content-button,
+.content-select {
+	border: none;
+	background: linear-gradient(to right, #00db9e, #00e895);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.5em;
+	text-align: center;
+	width: 340px;
+	padding: 13px 20px 11px 20px;
+	display: inline-block;
+}
+
+.content-select {
+	display: none;	
+}
+
+.week-block {
+	display: flex;
+}
+
+.week-info-block {
+	display: inline-block;
+	width: calc(100% - 340px);
+}
+
+.week-list {
+	display: flex;
+	align-items: center;
+}
+
+.week-item {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid #ebebeb;
+	height: 40px;	
+	cursor: pointer;
+	width: 14.2%;
+
+	&:hover .day-link {
+		color: #07d289;
+	}
+
+}
+
+.day-link {
+	text-transform: uppercase;
+	color: #cdcdcd;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.week-description {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin-top: 27px;
+}
+/*----------------------------------------section-4 end-------------------------------------*/
 
 
