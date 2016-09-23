@@ -65,10 +65,24 @@ body {
 	}
 
 	.search-select {
+
+  -webkit-appearance: none;
+  //background-image: url(../images/location-button-icon.png);
+  //background-position: right center;
+  //background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;	
 		padding: 15px 18px;
 		background: #fff;
 		height: 1.5em;
 		vertical-align: middle;
+
 
 		font-size: 14px;
 		font-weight: 300;
@@ -77,11 +91,8 @@ body {
 		padding: 0 78px 0 20px;
 		border: none;
 		margin-right: 3px;
-
-		option {
-
-		}	
-
+		border: none;
+		outline: none;
 	}
 
 	.select-location-button {
