@@ -3,14 +3,11 @@ $icon-font-path: '../fonts/';
 @media only screen and (max-width:735px) {	
 	
 
-	/*------------------------------header---------------------------*/
-
-	.logo-mobile {
-  	display: block;
-	}
+	/*------------------------------header---------------------------*/	
 
 	.logo {
-  	display: none;
+  	width: 72px;
+  	height: 29px;
 	}
 
 	.menu-list {
