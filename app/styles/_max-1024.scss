@@ -169,5 +169,31 @@ $icon-font-path: '../fonts/';
 	}
 
 	/*----------------------------------section 4 end-----------------------------------------*/
+
+	/*---------------------------section-5 --------------------------------------------*/
+
+	.left-flex-block {
+		padding: 0 18px;
+
+		.news-content-block {
+			margin: 53px auto 53px 0;
+		}
+
+	}	
+
+	.right-flex-block {
+
+		.news-content-block {
+			margin: 53px auto 53px 0;
+		}
+
+	}
+
+	.top-news-block,
+	.bottom-news-block {
+		padding: 0 18px;
+	}
+
+	/*------------------------------section-5 end------------------------------------------*/
 	
 }	

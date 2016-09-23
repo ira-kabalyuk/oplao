@@ -692,6 +692,7 @@ body {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 20px;
+	line-height: 1.5em;
 }
 
 .left-flex-block {
@@ -710,7 +711,7 @@ body {
 .news-text {
 	color: #fff;
 	font-size: 14px;
-	font-weight: 400px;
+	font-weight: 400;
 	margin: 25px auto 25px 0;
 	line-height: 1.5em;
 }
@@ -725,7 +726,8 @@ body {
 	padding: 16px 42px 14px 42px;
 
 	&:hover {
-		background: rgba(255,255,255,.3);		
+		background: rgba(255,255,255,.3);
+		border: 1px solid transparent;		
 	}
 
 }
