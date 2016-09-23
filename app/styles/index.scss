@@ -308,7 +308,7 @@ body {
   justify-content: center;
 }
 
-.full-forecast-link {
+.lange-link {
 	color: #fff;
 	font-weight: 400;
 	font-size: 14px;
@@ -756,8 +756,119 @@ body {
 	height: 300px;
 }
 
+.lange-wrap-gray {
+	background: #eeeeee;
 
+	.lange-link {
+		color: #4c4c4c;
+	}
+
+	&:hover {
+		background: #dbdbdb;
+
+		.lange-link {
+			color: #fff;
+		}
+
+	}
+
+}
+
+.content-banner-wrap.content-banner-wrap {
+	margin: 65px auto;
+}
 
 /*--------------------------------------section-5 end-----------------------------------------*/
+
+/*--------------------------------------section-6-----------------------------------------*/
+
+.browsers-list {
+	background: url(../images/browsers-bg.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;	
+}
+
+.browsers-item {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 140px;	
+	border-right: 1px solid #66dafe;
+	
+
+	&:last-child {
+		border-right: none;
+	}
+
+	/*&:hover {		
+		background: rgba(255,255,255,.2);
+		
+		.browsers-link {
+			color: #fff;
+		}
+
+	}*/
+
+}
+
+.browsers-link {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&:hover {		
+		background: rgba(255,255,255,.2);
+		color: #ffffff;
+	}
+
+}
+
+.firefox-icon {
+	background: url(../images/white-firefox.svg);
+	background-size: 24px 23px;
+	width: 24px;
+	height: 23px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.chrome-icon {
+	background: url(../images/white-chrome.svg);	
+	background-size: 22px 23px;
+	width: 22px;
+	height: 23px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.opera-icon {
+	background: url(../images/white-opera.svg);	
+	background-size: 21px 23px;
+	width: 21px;
+	height: 23px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.yandex-icon {
+	background: url(../images/white-yandex.svg);	
+	background-size: 21px 23px;
+	width: 21px;
+	height: 23px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+
+
+/*--------------------------------------section-6 end-----------------------------------------*/
 
 
