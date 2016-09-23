@@ -232,6 +232,34 @@ $icon-font-path: '../fonts/';
 
 
 	/*---------------------------section-6 end--------------------------------------------*/
+
+	/*----------------------------footer----------------------------------------*/
+
+	.footer-list-wrap {
+		display: none;
+	}
+
+	.feedback-wrap {
+		flex-wrap: wrap;
+		margin: 0;
+		height: auto;
+	}
+
+	.feedback-block,
+	.feedback-list {
+		width: 100%;
+		height: 60px;
+	}
+
+	.feedback-block {
+		border-bottom: 1px solid #3b4248;
+	}
+
+	.feedback-link {
+		border-left: 1px solid #3b4248;
+	}
+
+
 	
 }	
 

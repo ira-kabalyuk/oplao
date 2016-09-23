@@ -832,7 +832,7 @@ body {
 }
 
 .firefox-icon {
-	background: url(../images/white-firefox.svg);
+	background: url(../images/white-firefox.svg) no-repeat;
 	background-size: 24px 23px;
 	width: 24px;
 	height: 23px;
@@ -841,7 +841,7 @@ body {
 }
 
 .chrome-icon {
-	background: url(../images/white-chrome.svg);	
+	background: url(../images/white-chrome.svg) no-repeat;	
 	background-size: 22px 23px;
 	width: 22px;
 	height: 23px;
@@ -850,7 +850,7 @@ body {
 }
 
 .opera-icon {
-	background: url(../images/white-opera.svg);	
+	background: url(../images/white-opera.svg) no-repeat;	
 	background-size: 21px 23px;
 	width: 21px;
 	height: 23px;
@@ -859,7 +859,7 @@ body {
 }
 
 .yandex-icon {
-	background: url(../images/white-yandex.svg);	
+	background: url(../images/white-yandex.svg) no-repeat;	
 	background-size: 21px 23px;
 	width: 21px;
 	height: 23px;

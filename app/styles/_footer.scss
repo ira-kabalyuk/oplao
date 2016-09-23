@@ -1,2 +1,175 @@
 $icon-font-path: '../fonts/';
 
+.footer {
+	background: #1a1e22;
+	color: #61666a;
+}
+
+.footer-list-wrap {
+	display: flex;
+	padding: 60px 0;
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-item {
+	margin-bottom: 15px;
+	list-style: none;
+
+	&:hover {
+
+		.footer-link {
+			color: #fff;
+		 }
+	} 	
+
+}
+
+.footer-item-title {
+	margin-bottom: 20px;
+
+	.footer-link {
+		color: #6185a0;
+	}
+
+	&:hover {		
+
+	 .footer-link {
+		color: #6185a0;
+	 }
+
+	}
+
+}
+
+.footer-link {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	color: #61666a;
+}
+
+.feedback-wrap {
+	background: #23272b;
+	display: flex;
+	height: 70px;
+	max-width: 1520px;
+	margin: 0 auto; 
+}
+
+.feedback-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.feedback-icon {
+	background: url(../images/feedback-icon.png) no-repeat;	
+	width: 22px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.feedback-title-link {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;	
+	color: #61666a;
+	vertical-align: middle;
+
+	&:hover {
+		color: #61666a;
+	}
+
+}
+
+.feedback-title {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-left: 20px;
+	vertical-align: middle;
+	line-height: 18px;
+}
+
+.feedback-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.feedback-item {
+	list-style: none;
+	width: 20%;	
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback-link {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid #1a1e22;		
+
+	&:hover {
+		background: #2e3236;		
+	}
+
+}
+
+.vk-icon {
+	background: url(../images/gray-vk.svg) no-repeat;	
+	background-size: 19px 11px;
+	width: 19px;
+	height: 11px;
+	display: inline-block;
+}
+
+.fb-icon {
+	background: url(../images/gray-fb.svg) no-repeat;	
+	background-size: 8px 15px;
+	width: 8px;
+	height: 15px;
+	display: inline-block;
+}
+
+.tw-icon {
+	background: url(../images/gray-tw.svg) no-repeat;	
+	background-size: 17px 15px;
+	width: 17px;
+	height: 15px;
+	display: inline-block;
+}
+
+.gp-icon {
+	background: url(../images/gray-gp.svg) no-repeat;	
+	background-size: 23px 15px;
+	width: 23px;
+	height: 15px;
+	display: inline-block;
+}
+
+.yt-icon {
+	background: url(../images/gray-yt.svg) no-repeat;	
+	background-size: 18px 13px;
+	width: 18px;
+	height: 13px;
+	display: inline-block;
+}
+
+.copyright {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	padding: 20px 0;
+}
+
