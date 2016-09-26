@@ -2,6 +2,17 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width:568px) {
 
+	/*-------------------header------------------------*/
+
+	.menu-block {
+		width: 100%;
+	}
+
+	.settings-list {
+		//width: calc(100% - 72px);
+		width: 100%;
+	}	
+
 	/*---------------section-4-----------------------------------------*/
 
 	.right-column {

@@ -11,28 +11,36 @@ $icon-font-path: '../fonts/';
   background: #1a1e22;  
 }
 
-.logo-mobile {
-  display: none;
-}
-
 .menu-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  width: 100%;
+  //height: 60px;  
 }
 
 .menu-block {
   display: flex;
   align-items: center;
+  //width: calc(100% - 110px);
+  width: 64%;
+  justify-content: flex-end;
 }
 
 .menu-list {
   display: flex;
   align-items: center;
+  width: 50%;
+  justify-content: space-around;
 }
 
 .menu-item {
-   padding: 17px 27px;
+   //padding: 17px 27px;   
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 20px;
 
    &:hover {
     background: #262b2e;
@@ -43,10 +51,15 @@ $icon-font-path: '../fonts/';
   font-size: 14px;
   font-weight: 300;
   color: #88929c;
-  vertical-align: middle;  
+  vertical-align: middle; 
 
-  &:hover {
+
+  &:hover,
+  &:focus,
+  &:active {
     color: #88929c;
+    text-decoration: none;
+    outline: none;
   }
 
 }
@@ -61,27 +74,47 @@ $icon-font-path: '../fonts/';
   vertical-align: top;
 }
 
+.indicator-icon.red {  
+  background: #f30810;  
+}
+
+.indicator-icon.green {  
+  background: #53ed1c;  
+}
+
 .settings-list {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  width: 50%;
 }
 
 .settings-item, .settings-item-options {  
   border-left: 1px solid #262b30;
   cursor: pointer;
-  padding: 17px 47px;
-
-  &:last-child {
-    border-right: 1px solid #262b30;
-  } 
+  //padding: 17px 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 60px; 
 
   &:hover {
     background: #262b2e;
    }   
 }
 
+.share-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px; 
+}
+
 .settings-item-options {
-  padding: 14px 18px;
+ // padding: 14px 18px;
+ width: 30%;
 }
 
 .settings-icon {
@@ -105,7 +138,41 @@ $icon-font-path: '../fonts/';
   vertical-align: middle; 
 }
 
+.share-menu-list {
+  background: #1a1e22;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  min-width: auto;
+  margin: -1px 0 0 0;
+  box-shadow: none;
+  padding: 0;
+
+  .feedback-item {
+    width: auto;
+    height: 50px;
+     border-top: 1px solid #262b30;
+     border-left: none;
+  }
+
+  .feedback-link {
+    padding: 0;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+     border-left: none;
+   
+
+    &:hover {
+      background: #262b2e;
+    }
+
+  }
+
+}
+
 .options {
+  font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -132,7 +199,11 @@ $icon-font-path: '../fonts/';
 }
 
 .menu-button-wrap {
-  padding: 14px 90px;
+  //padding: 14px 90px;
+  width: 35%;
+  display: flex;;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background: #262b2e;

@@ -9,8 +9,13 @@ $icon-font-path: '../fonts/';
 
 	/*------------------------------header---------------------------*/	
 
+	.menu-block {
+		//width: calc(100% - 110px);
+		width: 75%;
+	} 
+
 	.menu-item {
-		padding: 17px 14px;
+		padding: 0;
 	}
 
 	.menu-link {
@@ -18,11 +23,11 @@ $icon-font-path: '../fonts/';
 	}
 
 	.settings-item {
-		padding: 17px 19px;
+		//padding: 17px 19px;
 	}
 
 	.menu-button-wrap {
-		padding: 14px 19px;
+		//padding: 14px 19px;
 	}
 
 	/*------------------------------header end---------------------------*/	

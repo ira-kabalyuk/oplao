@@ -325,8 +325,12 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;	
 	
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		color: #fff;
+		text-decoration: none;
+		outline: none;
 	}
 
 }
