@@ -7,7 +7,7 @@ $icon-font-path: '../fonts/';
 }
 
 
-.header {
+.header-top {
   background: #1a1e22;  
 }
 
@@ -199,16 +199,8 @@ $icon-font-path: '../fonts/';
   background: #88929c;
   padding: 3px 7px;
   display: block;
-  float: left;
-
-  &:first-child {
-    border-radius: 2px 0 0 2px;
-  }
-
-  &:last-child {
-    border-radius: 0 2px 2px 0;
-  }
-
+  float: left;  
+   border-radius: 2px 0 0 2px;
 }
 
 .options {
@@ -221,6 +213,7 @@ $icon-font-path: '../fonts/';
   padding: 3px 7px;
   display: block;
   float: left;
+  border-radius: 2px 0 0 2px;
 
   &:first-child {
     border-radius: 2px 0 0 2px;

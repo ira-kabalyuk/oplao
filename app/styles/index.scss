@@ -11,9 +11,8 @@ body {
 
 /*--------------------------------------------section-1------------------------------*/
 
-.section-1 {
-	background: url(../images/bg-1.jpg);
-	background-size: cover;
+.header {
+	background: linear-gradient(to right, #0054a8, #00c1ff);	
 }
 
 .location-wrap {
@@ -439,7 +438,7 @@ body {
 	}
 
 	.cloud-blue-icon {
-		background: url(../images/cloud-blue.svg) no-repeat;
+		background: url(../images/cloudy-color-gray.svg) no-repeat;
 		background-size: 30px 19px;
 		width: 30px;
 		height: 19px;

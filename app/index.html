@@ -23,7 +23,7 @@
         <img src="http://placehold.it/728x90">
       </div>     
 
-    <header class="header" id="menu_block">      
+    <header class="header-top" id="menu_block">      
       <div class="pagewrap">
         <nav class="menu-wrap">
           <div class="logo-block">            
@@ -55,8 +55,8 @@
               <li class="settings-item-options">               
                 <label class="options-label" for="settings_option">
                   <input type="checkbox" name="options" class="options-checkbox" id="settings_option">
-                  <span class="options">&#8451;</span>
-                  <span class="options">&#8457;</span>  
+                  <span class="options">°с</span>
+                  <span class="options">°f</span>  
                 </label>                                
               </li>            
               <li class="settings-item menu-button-wrap"> 
@@ -97,7 +97,7 @@
       </div>  
     </div>    
     
-    <section class="section-1">
+    <section class="header">
       <div class="pagewrap">
         <div class="location-wrap">
           <div class="location-block">
@@ -309,7 +309,7 @@
                 <p class="title-text">View map</p>
               </div>
               <div class="map-block">
-                <img class="map-img" src="images/map.png" alt="">
+                <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-31.728515624999996%2C40.34654412118006%2C20.56640625%2C60.4788788301667&amp;layer=mapnik"></iframe>
               </div>
             </div>
             <div class="content-block">
@@ -378,7 +378,7 @@
               <h2 class="title">7 day weather outlook of Minsk</h2>
               <div class="content-inside-block">
                 <div class="week-block">
-                  <button class="content-button">weekly outlook</button>
+                  <span class="content-button">weekly outlook</span>
                   <select class= "content-select" name="" id="">
                     <option>weekly outlook</option>             
                     <option>tue</option>
@@ -502,7 +502,10 @@
             </div>
               <div class="content-block">
                <div class="banner-wrap">
-                <img class="google-play" src="images/google-play.png" alt="">
+                <a class="pm-link" href="#">
+                  <img src="images/google_play.svg" alt=""/>
+                  <span>Oplao on Google Play</span>
+                </a>  
                </div>
               </div>   
           </div>         
