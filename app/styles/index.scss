@@ -458,17 +458,23 @@ body {
 		
 	}
 
-	.city-name {
-		display: block;
+	.popular-weather-city-link {
 		color: #4c4c4c;
+
+		&:hover {
+			color: #0880d5;
+		}
+	}
+
+	.city-name {
+		display: block;		
 		font-size: 16px;
 		font-weight: 500;
 		margin-bottom: 2px;
 	}
 
 	.land-name {
-		display: block;
-		color: #4c4c4c;
+		display: block;		
 		font-size: 16px;
 		font-weight: 300;
 	}
