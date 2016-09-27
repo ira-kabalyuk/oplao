@@ -11,7 +11,7 @@ function ParticleModel(config) {
       var MIN_OPACITY = 0.2;
       var MAX_VECTOR = 360;
       var MIN_VECTOR = 0;
-      var MAX_LIFE = 30000; // ms
+      var MAX_LIFE = 50000; // ms
       var MIN_LIFE = 20000;
       
       var defaults = {
