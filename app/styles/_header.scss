@@ -171,8 +171,48 @@ $icon-font-path: '../fonts/';
 
 }
 
-.options {
+.options-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.options-checkbox:checked + .options + .options{
   font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1a1e22;
+  border: 1px solid #88929c;
+  background: #88929c;
+  padding: 3px 7px;
+  display: block;
+  float: left;
+}
+
+.options-checkbox:not(:checked) + .options {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1a1e22;
+  border: 1px solid #88929c;
+  background: #88929c;
+  padding: 3px 7px;
+  display: block;
+  float: left;
+
+  &:first-child {
+    border-radius: 2px 0 0 2px;
+  }
+
+  &:last-child {
+    border-radius: 0 2px 2px 0;
+  }
+
+}
+
+.options {
+   font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -192,11 +232,12 @@ $icon-font-path: '../fonts/';
 
 }
 
-.options.active {
+
+/*.options-active {
   color: #1a1e22;
   border: 1px solid #88929c;
   background: #88929c;
-}
+}*/
 
 .menu-button-wrap {
   //padding: 14px 90px;
@@ -211,16 +252,23 @@ $icon-font-path: '../fonts/';
 
 }
 
-.burger {
-  background: transparent;
+.submenu_trigger {
+  background: url(../images/hamburger_icon.png) no-repeat;
+  //background: transparent;
   border: none;
-  height: 22px;
+  width: 26px;
+  height: 20px;
 }
 
-.burger-line {
-  width: 26px;
-  height: 1px;
-  margin: 4px 0;
-  background: #88929c;
-  display: block;
+.submenu {
+  background: #1a1e22;
+  border-top: 1px solid #262b30;
 }
+
+.opened {
+  background:  url(../images/cros_icon.png) top right no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+

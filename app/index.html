@@ -18,16 +18,14 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="main">
-    <div class="pagewrap">
+  <div class="main">        
       <div class="top-banner-wrap">
         <img src="http://placehold.it/728x90">
-      </div>
-    </div>
+      </div>     
 
-    <header class="header">      
+    <header class="header" id="menu_block">      
       <div class="pagewrap">
-        <nav class="menu-wrap" id="menu_block">
+        <nav class="menu-wrap">
           <div class="logo-block">            
               <a class="logo-link" href="#">              
                 <img class="logo" src="images/logo.png" alt="">                
@@ -54,22 +52,50 @@
                   <li class="feedback-item"><a href="" class="feedback-link"><i class="yt-icon"></i></a></li>
                 </ul>   
               </li>
-              <li class="settings-item-options">
-                <span  class="options">&#8451;</span>
-                <span class="options active">&#8457;</span>        
+              <li class="settings-item-options">               
+                <label class="options-label" for="settings_option">
+                  <input type="checkbox" name="options" class="options-checkbox" id="settings_option">
+                  <span class="options">&#8451;</span>
+                  <span class="options">&#8457;</span>  
+                </label>                                
               </li>            
               <li class="settings-item menu-button-wrap"> 
-                <button class="burger">
-                  <i class="burger-line"></i>
-                  <i class="burger-line"></i>
-                  <i class="burger-line"></i>
-                </button>
+                <button class="submenu_trigger"></button>
               </li>
             </ul>              
           </div>
         </nav>
       </div>
     </header>
+
+    <div class="submenu"> 
+      <div class="footer-list-wrap">        
+          <ul class="footer-list">
+            <li class="footer-item footer-item-title"><a href="" class="footer-link">Weather</a></li>
+            <li class="footer-item"><a href="" class="footer-link">7 days weather forecast</a></li>
+            <li class="footer-item"><a href="" class="footer-link">14 days weather forecast</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Hourly weather</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Weather map</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Weather history</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-item footer-item-title"><a href="" class="footer-link">Applications</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Android apps</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Google play</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Google Chrome weather extension</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Firefox weather extension</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Opera weather extension</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-item footer-item-title"><a href="" class="footer-link">Information</a></li>
+            <li class="footer-item"><a href="" class="footer-link">About</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Blog</a></li>
+            <li class="footer-item"><a href="" class="footer-link"></a></li>
+            <li class="footer-item"><a href="" class="footer-link"></a></li>
+            <li class="footer-item"><a href="" class="footer-link"></a></li>
+          </ul>               
+      </div>  
+    </div>    
     
     <section class="section-1">
       <div class="pagewrap">
@@ -589,7 +615,6 @@
     </footer>
   </div>
 
-
   <div  class="modal fade alerts" id="alerts" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -599,7 +624,7 @@
           <div class="severity_block"></div>
           <div class="subheader">Text Weather <span  class="green"></span></div>
           <p class="modal-text">The <span>maximum temperature</span> for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th August at around 5 pm. In the same week the <span>minimum temperature</span> will be 13°C (or 56°F) on Tuesday 23rd August at around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to be the wettest day in the coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Brighton.</p>        
-          <div class="lange-wrap lange-wrap-gray">
+          <div class="lange-wrap lange-wrap-gray" data-dismiss="modal">
             <a href="" class="lange-link" id="settings_link" data-toggle="modal" data-target="#settings">settings
               <i class="arrow-icon">&rarr;</i>
             </a>
