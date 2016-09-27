@@ -693,6 +693,48 @@ body {
 	}
 
 }
+
+.pm-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//flex-wrap: wrap;
+	flex-direction: column;
+	width: 300px;
+  height: 250px;
+	font-family: firasans-light, Arial, sans-serif;
+	color: #4c4c4c;
+	text-decoration: none;
+	text-align: center;
+  background: white;
+  border: 2px solid transparent; 	    
+  -moz-border-image: -moz-linear-gradient(bottom left,  #01cfff 0%, #fdff02 50%, #fb3745 100%);
+  -webkit-border-image: -webkit-linear-gradient(bottom left,  #01cfff 0%, #fdff02 50%, #fb3745 100%);
+  border-image: linear-gradient(to top right,  #01cfff 0%, #fdff02 50%, #fb3745 100%);
+  border-image-slice: 1; 
+	transition-property: border-image;
+	transition-duration: 0.5s;
+
+	&:hover {
+	-moz-border-image: -moz-linear-gradient(bottom left,  #fb3745 0%, #f80fdf 50%, #01cfff 100%);
+  -webkit-border-image: -webkit-linear-gradient(bottom left,  #f80fdf 0%, #fdff02 50%, #01cfff 100%);
+  border-image: linear-gradient(to top right,   #fb3745 0%, #f80fdf 50%, #01cfff 100%);
+	border-image-slice: 1;
+	transition-property: border-image;
+	transition-duration: 0.5s;
+	}
+
+	img {
+		width: 59px;
+		height: 59px;
+	}
+
+	.pm-title {
+		//width: 100%;
+		color: #4c4c4c;	
+		padding-top: 35px;	
+	}
+}
 /*----------------------------------------section-4 end-------------------------------------*/
 
 /*---------------------------------section-5------------------------------------*/
