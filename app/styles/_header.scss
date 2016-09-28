@@ -11,14 +11,19 @@ $icon-font-path: '../fonts/';
   background: #1a1e22;  
 }
 
+#menu_block {
+  position: relative !important;
+  top: 0 !important;
+}
+
 .menu-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   //height: 60px; 
-  position: static !important;
- 
+  
+
 }
 
 .menu-block {
@@ -258,6 +263,15 @@ $icon-font-path: '../fonts/';
 .submenu {
   background: #1a1e22;
   border-top: 1px solid #262b30;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  z-index: 10;
+
+  .menu-list {
+    display: none;
+  }
+  
 }
 
 .opened {

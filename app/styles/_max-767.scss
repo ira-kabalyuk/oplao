@@ -23,6 +23,25 @@ $icon-font-path: '../fonts/';
 		width: 200px;
 	}
 
+	.submenu {		  
+
+  .menu-list {
+    display: flex;
+    width: 100%;
+    //padding: 0 18px;
+    border-bottom: 1px solid #262b30;
+  }
+
+  .menu-item {
+  	width: 33.3%;  	
+  }
+
+  .footer-list-wrap {			
+			padding: 30px 18px;
+		}
+  
+}
+
 
 	/*---------------------------------------section-5-------------------------------*/
 
