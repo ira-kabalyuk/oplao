@@ -16,7 +16,9 @@ $icon-font-path: '../fonts/';
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  //height: 60px;  
+  //height: 60px; 
+  position: static !important;
+ 
 }
 
 .menu-block {
