@@ -177,27 +177,26 @@ $icon-font-path: '../fonts/';
 
 	/*---------------------------section-5 --------------------------------------------*/
 
-	.left-flex-block {
-		padding: 0 18px;
+	.left-flex-block {		
 
-		.news-content-block {
-			margin: 53px auto 53px 0;
+		.news-content-block {			
+			width: auto;
+			left: 18px;
+			right: 18px;
 		}
 
 	}	
 
 	.right-flex-block {
-
+		
 		.news-content-block {
-			margin: 53px auto 53px 0;
+			width: auto;
+			left: 18px;
+			right: 18px;
 		}
 
 	}
-
-	.top-news-block,
-	.bottom-news-block {
-		padding: 0 18px;
-	}
+	
 
 	/*------------------------------section-5 end------------------------------------------*/
 

@@ -1,0 +1,43 @@
+.snip1190 {  
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;  
+  background: #000000;
+  text-align: center;
+}
+.snip1190 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.snip1190 img {
+  //opacity: 0.8;
+  //width: 100%;
+}
+.snip1190 figcaption {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.snip1190:hover img,
+.snip1190.hover img {
+  //opacity: 0.25;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.snip1190:hover h2,
+.snip1190.hover h2 {
+  //opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+
+

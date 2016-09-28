@@ -29,7 +29,11 @@ $icon-font-path: '../fonts/';
 		.left-flex-block {
 		
 		.news-content-block {
-			margin: 35px auto 35px 0;
+			top: 35px;
+		}
+
+		.left-img {
+			width: 100%;
 		}
 		
 	}
@@ -37,7 +41,7 @@ $icon-font-path: '../fonts/';
 	.right-flex-block {
 
 		.news-content-block {
-			margin: 35px auto 35px 0;
+			top: 35px;
 		}
 
 		.news-text {
