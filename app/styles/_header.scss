@@ -258,6 +258,7 @@ $icon-font-path: '../fonts/';
   border: none;
   width: 26px;
   height: 20px;
+  display: block;
 }
 
 .submenu {
@@ -267,16 +268,17 @@ $icon-font-path: '../fonts/';
   width: 100%;
   top: 60px;
   z-index: 10;
+  display: none;
 
   .menu-list {
     display: none;
   }
-  
+
 }
 
 .opened {
   background:  url(../images/cros_icon.png) top right no-repeat;
-  display: block;
+  //display: block;
   width: 20px;
   height: 20px;
 }
