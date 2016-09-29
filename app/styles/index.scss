@@ -12,42 +12,45 @@ body {
 /*--------------------------------------------section-1------------------------------*/
 
 .header {
-	background: linear-gradient(to right, #0054a8, #00c1ff);	
+	background: url(../images/head-bg.jpg);
+	background-size: cover;	
 }
 
 .location-wrap {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 50px;
-}
 
-.location-text-wrap {
+	.location-text-wrap {
 	margin-left: 20px;
-}
+	}
 
-.location-icon {
-	background: url(../images/location-icon.png) no-repeat;
-	width: 14px;
-	height: 21px;
-	display: inline-block;
-	float: left;
-}
+	.location-icon {
+		background: url(../images/location-icon.png) no-repeat;
+		width: 14px;
+		height: 21px;
+		display: inline-block;
+		float: left;
+	}
 
-.location-name {
+	.location-name {
 	font-size: 22px;
 	font-weight: 400;
 	color: #fff;
 	margin-bottom: 9px;
 }
 
-.location-description {
-	font-size: 16px;
-	font-weight: 300;
-	color: #66a6d4;
+	.location-description {
+		font-size: 16px;
+		font-weight: 300;
+		color: #66a6d4;
 
-	span {
-		color: #fff;
+		span {
+			color: #fff;
+		}
+
 	}
+
 }
 
 .search-block {
@@ -56,46 +59,34 @@ body {
 	background: #fff;
 	display: flex;
 	align-items: center;
-	width: 447px;
+	width: 547px;
 	position: relative;
 	z-index: 5;
 
-	.select-block {
+	.city_input_container {
 		position: relative;
 		top: 0;
+		padding-right: 10px;
+		width: 90%;
 	}
 
-	.search-select {
-
-  -webkit-appearance: none;
-  //background-image: url(../images/location-button-icon.png);
-  //background-position: right center;
-  //background-repeat: no-repeat;
-  line-height: 1em;
-  /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px; 
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none!important;	
-		padding: 15px 18px;
-		background: #fff;
-		height: 1.5em;
-		vertical-align: middle;
-
-
-		font-size: 14px;
-		font-weight: 300;
-		text-decoration: none;
-		color: #e3e3e3;
-		padding: 0 78px 0 20px;
-		border: none;
-		margin-right: 3px;
+	.text_input {
+		height:45px;	
 		border: none;
 		outline: none;
-	}
+		box-shadow: none;
+		font-size: 14px;
+		background: url('../images/location-button-icon.png') center right no-repeat;
+		cursor: pointer;
 
+		&:focus {
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+
+	}
+	
 	.select-location-button {
 		background: #fff;
 		position: absolute;
@@ -110,12 +101,69 @@ body {
 		text-align: right;
 	}
 
-	.location-button-icon {
+	.location_submenu {
+		background: white;
+		list-style: none;
+		width: 100%;
+		padding:0 15px 0 15px;
+		display: none;
+		position: absolute;
+		top: 40px;
+		z-index:100
+	}
+
+	.visible{
+		display: block;
+	}
+
+	.location_submenu li {
+		font-size:14px;
+		font-family:  firasans-book, Arial, sans-serif;
+		padding:0 15px 0 20px;
+		border-bottom: 1px solid #ebebeb;
+
+		&:hover {
+			background: #ebebeb; 
+			cursor: pointer;
+		}
+
+			.close{
+			float: right;
+			width:10px;
+			height:10px;
+			background: url('../images/close.png') top left no-repeat;
+			background-position: 0 -10px;
+			margin-top:22px;
+			display: inline-block;
+			opacity:1;
+		}
+
+		div{
+			margin-right:15px;
+			padding:15px 0 15px 0;	
+		}	
+
+		.current {
+		color: #0880d5;
+		}
+		
+	}
+
+	
+
+	.location_submenu li:hover .close{
+		background-position: 0  -10px;
+		opacity: 1;
+	}
+	
+	
+
+	/*.location-button-icon {
 		background: url(../images/location-button-icon.png) no-repeat 7px 0;
 		width: 30px;
 		height: 8px;
 		display: inline-block;
-	}
+	}*/
 
 	.search-button, .location-button {
 		background: #fff;

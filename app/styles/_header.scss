@@ -72,8 +72,8 @@ $icon-font-path: '../fonts/';
 }
 
 .indicator-icon {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #f30810;
   display: inline-block;
   border-radius: 2px;
@@ -108,6 +108,13 @@ $icon-font-path: '../fonts/';
 
   &:hover {
     background: #262b2e;
+   }   
+}
+
+.settings-item-options {
+
+  &:hover {
+    background: transparent;
    }   
 }
 

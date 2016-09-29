@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>oplao</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,7 +13,8 @@
     <!-- endbuild -->
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,latin-ext" rel="stylesheet">
 
-   <link rel="icon" type="image/ico" href="images/favicon.png" /> 
+   <link rel="icon" type="image/ico" href="images/favicon.png" />
+   <meta property="og:image" content="images/favicon-2.png"> 
 
    <script src="/bower_components/jquery/dist/jquery.js"></script>
    <script type="text/javascript" src="scripts/utils.js"></script>
@@ -113,23 +114,23 @@
           <div class="location-block">
             <i class="location-icon"></i>
             <div class="location-text-wrap">
-              <p class="location-name">Minsk weather, Belarus</p>
+              <p class="location-name"><span id="city_name">Minsk</span> weather, <span id="country_name">Belarus</span></p>
               <p class="location-description">Today August 19, Friday. <span>12:10 AM</span></p>              
             </div>
           </div>
-          <div class="search-block">
-            <div class="select-block">
-              <select class="search-select">                                       
-                <option>City/Town, Post/Zip code LAT LON</option>             
-                <option>Kiyv</option>
-                <option>Minsk</option>
-                <option>Paris</option>              
-              </select>
-              <span class="select-location-button"><i class="location-button-icon"></i></span>
+          <div class="search-block white_block">
+            <div class="city_input_container">
+              <input type="text" placeholder="City/Town, Post/Zip code, LAT, LON"  class="form-control text_input" />              
+             <!-- <span class="select-location-button"><i class="location-button-icon"></i></span>-->
             </div>
-            <button class="search-button">
-              <i class="search-button-icon"></i>
-            </button>
+            <ul class="location_submenu">
+              <li class="current w1"><span class="close"></span><div>Minsk, Belarus</div></li>
+              <li class="w2"><span class="close"></span><div>London, Great Britain</div></li>
+              <li class="w3"><span class="close"></span><div>New York, United States</div></li>
+              <li class="w4"><span class="close"></span><div>Moscow, Russia</div></li>
+              <li class="w5"><span class="close"></span><div>Minsk, Belarus</div></li>
+              <li class="close_block"></li>
+            </ul>               
             <button class="location-button">
               <i class="autolocation-button-icon"></i>
             </button>    
