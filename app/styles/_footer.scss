@@ -60,10 +60,23 @@ $icon-font-path: '../fonts/';
 }
 
 .feedback-block {
+	background: #23272b;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 50%;
+	border: none;
+
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;	
+	color: #61666a;
+	vertical-align: middle;
+
+	&:hover {
+		background: #2e3236;
+	}
+
 }
 
 .feedback-icon {
@@ -74,18 +87,7 @@ $icon-font-path: '../fonts/';
 	vertical-align: middle;
 }
 
-.feedback-title-link {
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;	
-	color: #61666a;
-	vertical-align: middle;
 
-	&:hover {
-		color: #61666a;
-	}
-
-}
 
 .feedback-title {
 	font-size: 14px;
