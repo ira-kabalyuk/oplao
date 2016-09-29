@@ -260,12 +260,19 @@ $icon-font-path: '../fonts/';
 }
 
 .submenu_trigger {
-  background: url(../images/hamburger_icon.png) no-repeat;
+  background: url(../images/hamburger_icon.png) 50% 50% no-repeat;
   //background: transparent;
   border: none;
-  width: 26px;
-  height: 20px;
+  width: 60px;
+  height: 50px;
   display: block;
+}
+
+.opened {
+  background:  url(../images/cros_icon.png) 50% 50% no-repeat;
+  //display: block;
+  width: 60px;
+  height: 50px;
 }
 
 .submenu {
@@ -283,10 +290,5 @@ $icon-font-path: '../fonts/';
 
 }
 
-.opened {
-  background:  url(../images/cros_icon.png) top right no-repeat;
-  //display: block;
-  width: 20px;
-  height: 20px;
-}
+
 

@@ -181,13 +181,18 @@ $icon-font-path: '../fonts/';
 		display: none;
 	}
 
-	.content-select {
+	.weater_outlook_menu_trigger {
 		display: block;
-		margin: 0 auto;
 	}
 
-	.week-info-block {
+	.week-list {
+		width: 100%;
+		margin-bottom: 20px;
 		display: none;
+	}
+
+	.week-list.visible {
+		display: flex;
 	}
 
 

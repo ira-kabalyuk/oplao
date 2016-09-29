@@ -103,8 +103,7 @@
             </ul>              
           </div>          
         </nav>
-      </div>
-      
+      </div>      
     </div>
     </header>    
     
@@ -114,7 +113,7 @@
           <div class="location-block">
             <i class="location-icon"></i>
             <div class="location-text-wrap">
-              <p class="location-name"><span id="city_name">Minsk</span> weather, <span id="country_name">Belarus</span></p>
+              <p class="location-name"><span id="city_name">Minsk</span> weather,<span id="country_name">Belarus</span></p>
               <p class="location-description">Today August 19, Friday. <span>12:10 AM</span></p>              
             </div>
           </div>
@@ -410,30 +409,47 @@
               <h1 class="content-title">Text Weather</h1>
               <h2 class="title">7 day weather outlook of Minsk</h2>
               <div class="content-inside-block">
-                <div class="week-block">
-                  <span class="content-button">weekly outlook</span>
-                  <select class= "content-select" name="" id="">
-                    <option>weekly outlook</option>             
-                    <option>tue</option>
-                    <option>wed</option>
-                    <option>fri</option>
-                    <option>sat</option>
-                    <option>sun</option>
-                    <option>mon</option>   
-                  </select>
+                <div class="week-block">                 
                   <div class="week-info-block">
-                    <ul class="week-list">
-                      <li class="week-item"><a href="" class="day-link">tue</a></li>
-                      <li class="week-item"><a href="" class="day-link">wed</a></li>
-                      <li class="week-item"><a href="" class="day-link">thu</a></li>
-                      <li class="week-item"><a href="" class="day-link">fri</a></li>
-                      <li class="week-item"><a href="" class="day-link">sat</a></li>
-                      <li class="week-item"><a href="" class="day-link">sun</a></li>
-                      <li class="week-item"><a href="" class="day-link">mon</a></li>
+                    <div class="weater_outlook_menu_trigger visible-xs">Weekly outlook</div>
+                    <ul class="nav nav-tabs week-list weather_outlook_header">
+                      <li class="week-item active"><a href="#weekly" class="day-link" data-toggle="tab">Weekly outlook</a></li>
+                      <li class="week-item"><a href="#tue" class="day-link" data-toggle="tab">tue</a></li>
+                      <li class="week-item"><a href="#wed" class="day-link" data-toggle="tab">wed</a></li>
+                      <li class="week-item"><a href="#thu" class="day-link" data-toggle="tab">thu</a></li>
+                      <li class="week-item"><a href="#fri" class="day-link" data-toggle="tab">fri</a></li>
+                      <li class="week-item"><a href="#sat" class="day-link" data-toggle="tab">sat</a></li>
+                      <li class="week-item"><a href="#sun" class="day-link" data-toggle="tab">sun</a></li>
+                      <li class="week-item"><a href="#mon" class="day-link" data-toggle="tab">mon</a></li>
                     </ul>
                   </div>
                 </div>
-                <p class="week-description">The maximum temperature for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th Augustat around 5 pm. In the same week the minimum temperature will be 13°C (or 56°F) on Tuesday 23rd Augustat around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to be the wettest day inthe coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Brighton.</p>
+                  <div class="tab-content weather_outlook_content">
+                    <div class="tab-pane active" id="weekly">
+                      <p class="tab-pane">The maximum temperature for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th Augustat around 5 pm. In the same week the minimum temperature will be 13°C (or 56°F) on Tuesday 23rd Augustat around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to be the wettest day inthe coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Brighton.</p>
+                    </div>
+                    <div class="tab-pane" id="tue">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit dapibus metus, eu dapibus massa ultrices a. Pellentesque condimentum sodales pharetra. Phasellus at odio ac massa euismod ultrices id id ex. </p>
+                    </div>
+                    <div class="tab-pane" id="wed">
+                      <p>uis commodo quam vel volutpat efficitur. Donec vehicula gravida dui. In ut dapibus velit, vitae mollis lorem. Praesent nec laoreet nisi. Ut accumsan lorem ut metus cursus tempus. </p>
+                    </div>
+                    <div class="tab-pane" id="thu">
+                      <p>Suspendisse potenti. Ut commodo at ante at consectetur. Nunc dapibus faucibus metus ut feugiat. Nulla quis lectus tincidunt, dignissim leo sit amet, fermentum massa. Praesent ultricies tortor nec dui fringilla, sit amet maximus nisl lobortis. </p>
+                    </div>
+                    <div class="tab-pane" id="fri">
+                      <p>Nam aliquet diam ut eros luctus, eget ornare lorem facilisis. Donec a eros semper, elementum urna eu, volutpat lacus. Maecenas blandit, mauris sed convallis sollicitudin, lectus nulla gravida ex, sit </p>
+                    </div>
+                    <div class="tab-pane" id="sat">
+                      <p>tristique metus molestie vel. In in est quis purus efficitur ornare. Pellentesque porta ex ac dui blandit, iaculis ullamcorper enim ultricies. Donec et ipsum eu eros condimentum bibendum. Praesent faucibus lacus nec luctus consequat. </p>
+                    </div>
+                    <div class="tab-pane" id="sun">
+                      <p>Phasellus sed arcu tincidunt nunc molestie condimentum. Mauris et dui congue, volutpat elit sit amet, iaculis diam. Nunc non dolor sed nisi porta aliquam eu a leo. Integer a lacinia turpis. Vestibulum sodales sem a ultrices viverra. Etiam purus odio, aliquam vitae porta sit</p>
+                    </div>
+                    <div class="tab-pane" id="mon">
+                      <p>amet, rutrum ut sem. Morbi id libero ipsum. Quisque nec enim nulla. Vivamus at tellus pulvinar, sollicitudin eros id, luctus sem. Proin accumsan est et neque consectetur, non tempus sapien p</p>
+                    </div>
+                  </div>  
               </div>
             </div>
 
@@ -567,27 +583,33 @@
       <div class="content-flex-block">
         <div class="left-flex-block snip1190">
         <img src="images/news-bg-1.jpg" alt="" class="left-img">
-          <div class="news-content-block">  
-            <h1 class="news-title">How to fill the gap when waiting for the next trip</h1>
-            <p class="news-text">If you got used to travel a lot then it would be definitelydifficult for you to live a common...</p>
-            <button class="transparent-button">read more</button>
+          <div class="news-content-block">
+            <a href="" class="news-link">
+              <span class="news-title">How to fill the gap when waiting for the next trip</span>
+              <span class="news-text">If you got used to travel a lot then it would be definitelydifficult for you to live a common...</span>
+              <button class="transparent-button">read more</button>
+            </a>
           </div>
         </div>
         <div class="right-flex-block">
           <div class="top-news-block snip1190">
             <img src="images/news-bg-2.jpg" alt="" class="left-img">
-            <div class="news-content-block">  
-            <h1 class="news-title">Melting Greenland: the tipping poin</h1>
-            <p class="news-text">We live in the era of climate changes and, therefore...</p>
-            <button class="transparent-button">read more</button>
+            <div class="news-content-block">
+            <a href="" class="news-link">
+              <span class="news-title">Melting Greenland: the tipping poin</span>
+              <span class="news-text">We live in the era of climate changes and, therefore...</span>
+              <button class="transparent-button">read more</button>
+            </a>
           </div>
           </div>
           <div class="bottom-news-block snip1190">
             <img src="images/news-bg-3.jpg" alt="" class="left-img">
-            <div class="news-content-block">  
-            <h1 class="news-title">Sandstorms: touch the Sahara</h1>
-            <p class="news-text">Did you know that every person living thousands of miles...</p>
-            <button class="transparent-button">read more</button>
+            <div class="news-content-block">
+            <a href="" class="news-link">  
+              <span class="news-title">Sandstorms: touch the Sahara</span>
+              <span class="news-text">Did you know that every person living thousands of miles...</span>
+              <button class="transparent-button">read more</button>
+            </a>
           </div>
           </div>
         </div>
