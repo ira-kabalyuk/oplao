@@ -4,6 +4,10 @@ body {
 	font-family: 'Fira Sans', sans-serif;
 }
 
+.main {
+	overflow-x: hidden; 
+}
+
 .pagewrap {	
 	max-width: 1520px;
 	margin: 0 auto;
@@ -13,7 +17,8 @@ body {
 
 .header {
 	background: url(../images/head-bg.jpg);
-	background-size: cover;	
+	background-size: cover;
+	width: 100%;	
 }
 
 .location-wrap {
