@@ -315,6 +315,10 @@ $icon-font-path: '../fonts/';
     background: transparent;
   }
 
+  .indicator-icon.green {
+    display: none;
+  }
+
 }
 
 .submenu_trigger {
