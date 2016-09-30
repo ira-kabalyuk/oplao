@@ -84,12 +84,16 @@
                     <li class="feedback-item"><a href="" class="feedback-link"><i class="gp-icon"></i></a></li>      
                   </ul>   
                 </li>
-                <li class="settings-item-options">               
+                <li class="settings-item settings-item-options">               
                   <label class="options-label" for="settings_option">
                     <input type="checkbox" name="options" class="options-checkbox" id="settings_option">
-                    <span class="options">°с</span>
-                    <span class="options">°f</span>  
-                  </label>                                
+                    <span class="options">&#8451;</span>
+                    <span class="options">&#8457;</span>  
+                  </label>
+                  <div class="switch_button mobile-select">                    
+                    <div class="grad">&#8451;</div>
+                    <div class="hidden_grad">&#8457;</div>
+                  </div>                                
                 </li>            
                 <li class="settings-item menu-button-wrap"> 
                   <button class="submenu_trigger"></button>
@@ -126,7 +130,7 @@
               <li class="w2"><span class="close"></span><div>London, Great Britain</div></li>
               <li class="w3"><span class="close"></span><div>New York, United States</div></li>
               <li class="w4"><span class="close"></span><div>Moscow, Russia</div></li>
-              <li class="w5"><span class="close"></span><div>Minsk, Belarus</div></li>
+              <li class="w5"><span class="close"></span><div>Kiyv, Ukraine</div></li>
               <li class="close_block"></li>
             </ul>               
             <button class="location-button">
@@ -142,8 +146,8 @@
             </div>
             <div class="weather-text-block">
               <span class="weather-text">18</span>
-              <sup class="deg-c">&deg;с</sup>
-              <sup class="deg-f">/75&deg;f</sup>
+              <sup class="deg-c">&#8451;</sup>
+              <sup class="deg-f">/75&#8457;</sup>
             </div>
           </div>
           <div class="info-block">
@@ -151,7 +155,7 @@
               <li class="info-item">
                 <i class="feels-icon"></i>
                 <span class="info-item-text">Feels like</span>
-                <span class="info">24&degC</span>
+                <span class="info">24&#8451;</span>
               </li>
                <li class="info-item">
                 <i class="humidity-icon"></i>
@@ -260,8 +264,8 @@
                 </div>
                 <div class="popular-weather-city-block">
                 <a href="" class="popular-weather-city-link">
-                  <span class="city-name">New-York</span>
-                  <span class="land-name">United States</span>
+                  <span class="city-name">Minsk</span>
+                  <span class="land-name">Belarus</span>
                 </a>  
                 </div>
               </div>
@@ -288,8 +292,8 @@
                 </div>
                 <div class="popular-weather-city-block">
                   <a href="" class="popular-weather-city-link">
-                    <span class="city-name">Kiyv</span>
-                    <span class="land-name">Ukraine</span>
+                    <span class="city-name">New York</span>
+                    <span class="land-name">United States</span>
                   </a> 
                 </div>
               </div>
@@ -316,8 +320,8 @@
                 </div>
                 <div class="popular-weather-city-block">
                   <a href="" class="popular-weather-city-link">
-                    <span class="city-name">Minsk</span>
-                    <span class="land-name">Belarus</span>
+                    <span class="city-name">Kiyv</span>
+                    <span class="land-name">Ukraine</span>
                   </a>
                 </div>
               </div>
@@ -543,18 +547,27 @@
               <div class="top-city-wrap">
                 <h2 class="title">Top holiday destinations</h2>
                 <div class="top-city-block">
-                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">New York</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">New York</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
-                  <a href="" class="top-city-link">New York</a>
+                  <a href="" class="top-city-link">Santiago <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Minsk <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">London <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Belford Roxo <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Delmas <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Saint Petersburg <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Minsk <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">London <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Belford Roxo <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Delmas <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Saint Petersburg <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Minsk <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">London <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Belford Roxo <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Delmas <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Saint Petersburg <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Minsk <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">London <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Belford Roxo <span class="sep">/</span></a>
+                  <a href="" class="top-city-link">Delmas <span class="sep">/</span></a>                  
+                  <a href="" class="top-city-link">London</a>
                 </div>
               </div> 
             </div>    
@@ -643,10 +656,10 @@
         </div> 
       </div>
       <ul class="browsers-list">
-        <li class="browsers-item"><a href="https://addons.mozilla.org/en-US/firefox/addon/oplao-weather/" class="browsers-link"><i class="firefox-icon"></i>Firefox</a></li>
-        <li class="browsers-item"><a href="https://chrome.google.com/webstore/detail/oplao-weather/jbjeihiakbjchgaehgcilindlghfffnb" class="browsers-link"><i class="chrome-icon"></i>Chrome</a></li>
-        <li class="browsers-item"><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="browsers-link"><i class="opera-icon"></i>Opera</a></li>
-        <li class="browsers-item"><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="browsers-link"><i class="yandex-icon"></i>Yandex</a></li>
+        <li class="browsers-item"><a href="https://addons.mozilla.org/en-US/firefox/addon/oplao-weather/" class="browsers-link" target="_blank"><i class="firefox-icon"></i>Firefox</a></li>
+        <li class="browsers-item"><a href="https://chrome.google.com/webstore/detail/oplao-weather/jbjeihiakbjchgaehgcilindlghfffnb" class="browsers-link" target="_blank"><i class="chrome-icon"></i>Chrome</a></li>
+        <li class="browsers-item"><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="browsers-link"><i class="opera-icon" target="_blank"></i>Opera</a></li>
+        <li class="browsers-item"><a href="https://addons.opera.com/en/extensions/details/oplao-weather/" class="browsers-link" target="_blank"><i class="yandex-icon"></i>Yandex</a></li>
       </ul>
     </section>
     <footer class="footer">
@@ -684,11 +697,11 @@
               <span class="feedback-title">feedback</span>            
           </button>
           <ul class="feedback-list">
-            <li class="feedback-item"><a href="https://vk.com/oplao" class="feedback-link"><i class="vk-icon"></i></a></li>
-            <li class="feedback-item"><a href="https://www.facebook.com/Oplao/" class="feedback-link"><i class="fb-icon"></i></a></li>
-            <li class="feedback-item"><a href="https://twitter.com/Oplaoweather" class="feedback-link"><i class="tw-icon"></i></a></li>
-            <li class="feedback-item"><a href="https://plus.google.com/u/0/b/111062725555627000569/+Oplaoweather" class="feedback-link"><i class="gp-icon"></i></a></li>
-            <li class="feedback-item"><a href="https://www.youtube.com/Oplaoweather" class="feedback-link"><i class="yt-icon"></i></a></li>
+            <li class="feedback-item"><a href="https://vk.com/oplao" class="feedback-link" target="_blank"><i class="vk-icon"></i></a></li>
+            <li class="feedback-item"><a href="https://www.facebook.com/Oplao/" class="feedback-link" target="_blank"><i class="fb-icon"></i></a></li>
+            <li class="feedback-item"><a href="https://twitter.com/Oplaoweather" class="feedback-link" target="_blank"><i class="tw-icon"></i></a></li>
+            <li class="feedback-item"><a href="https://plus.google.com/u/0/b/111062725555627000569/+Oplaoweather" class="feedback-link" target="_blank"><i class="gp-icon"></i></a></li>
+            <li class="feedback-item"><a href="https://www.youtube.com/Oplaoweather" class="feedback-link" target="_blank"><i class="yt-icon"></i></a></li>
           </ul>
         </div>
         <p class="copyright">2016. Oplao, All right reserved</p>      

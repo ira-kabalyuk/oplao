@@ -84,20 +84,20 @@ $(document).ready(function(){
 		$('#alerts').modal('hide');				
 	});
 
-	$(".menu_list .grad").click(function() {	
-		$('.menu_list .hidden_grad').toggleClass("visible");				
+	$(".grad").click(function() {	
+		$('.hidden_grad').toggleClass("visible");				
 	});
-	$(".menu_list .hidden_grad").click(function() {		
-		temp = $(".menu_list .hidden_grad").html()
-		$('.menu_list .hidden_grad').html($(".menu_list .grad").html());	
-		$('.menu_list .grad').html(temp);	
+	$(".hidden_grad").click(function() {		
+		temp = $(".hidden_grad").html()
+		$('.hidden_grad').html($(".menu_list .grad").html());	
+		$('.grad').html(temp);	
 	});
 	
 	$(document).click(function (e){ 
-		var div = $(".menu_list .bordered"); 		
+		var div = $(".switch_button "); 		
 		if (!div.is(e.target) 
 			&& div.has(e.target).length === 0) { 							
-			$(".menu_list .hidden_grad").removeClass("visible");			
+			$(".hidden_grad").removeClass("visible");			
 		}				
 	});	
 	

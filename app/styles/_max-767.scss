@@ -16,7 +16,15 @@ $icon-font-path: '../fonts/';
 
 	.settings-list {
 		width: 70%;
+	}
+
+	.options-label {
+		display: none;
 	}	
+
+	.mobile-select {
+  	display: block;
+	}
 
 	.now-weather-block {
 		justify-content: flex-start;		
