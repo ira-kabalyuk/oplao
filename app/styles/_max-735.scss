@@ -17,7 +17,9 @@ $icon-font-path: '../fonts/';
 	.submenu {
 
 		.footer-list-wrap {
-			display: block;			
+			display: block;
+			overflow: hidden;	
+			overflow-y: scroll;		
 		}
 	}
 	
