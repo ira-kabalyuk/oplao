@@ -252,64 +252,74 @@
       <div class="pagewrap">
         <div class="popular-weather-wrap">
           <ul class="popular-weather-list">
-            <li class="popular-weather-item">
-              <div class="popular-weather-img-block">
-                <i class="cloud-blue-icon"></i>
-                <span class="city-deg-value">25 &deg;с</span>
-              </div>
-              <div class="popular-weather-city-block">
-              <a href="" class="popular-weather-city-link">
-                <span class="city-name">New-York</span>
-                <span class="land-name">United States</span>
-              </a>  
-              </div>
-            </li>
-            <li class="popular-weather-item">
-              <div class="popular-weather-img-block">
-                <i class="cloud-blue-icon"></i>
-                <span class="city-deg-value">2 &deg;с</span>
-              </div>
-              <div class="popular-weather-city-block">
+            <li class="popular-weather-item" id="w1">
+              <div class="popular-weather-inside-wrap"> 
+                <div class="popular-weather-img-block">
+                  <i class="cloud-blue-icon"></i>
+                  <span class="city-deg-value">25 &deg;с</span>
+                </div>
+                <div class="popular-weather-city-block">
                 <a href="" class="popular-weather-city-link">
-                  <span class="city-name">London</span>
-                  <span class="land-name">United Kingdom</span>
+                  <span class="city-name">New-York</span>
+                  <span class="land-name">United States</span>
                 </a>  
+                </div>
               </div>
             </li>
-            <li class="popular-weather-item">
-              <div class="popular-weather-img-block">
-                <i class="cloud-blue-icon"></i>
-                <span class="city-deg-value">18 &deg;с</span>
-              </div>
-              <div class="popular-weather-city-block">
-                <a href="" class="popular-weather-city-link">
-                  <span class="city-name">Kiyv</span>
-                  <span class="land-name">Ukraine</span>
-                </a> 
-              </div>
-            </li>
-            <li class="popular-weather-item">
-              <div class="popular-weather-img-block">
-                <i class="cloud-blue-icon"></i>
-                <span class="city-deg-value">10 &deg;с</span>
-              </div>
-              <div class="popular-weather-city-block">
-                <a href="" class="popular-weather-city-link">
-                  <span class="city-name">Moskow</span>
-                  <span class="land-name">Russia</span>
-                </a>
+            <li class="popular-weather-item" id="w2">
+              <div class="popular-weather-inside-wrap"> 
+                <div class="popular-weather-img-block">
+                  <i class="cloud-blue-icon"></i>
+                  <span class="city-deg-value">2 &deg;с</span>
+                </div>
+                <div class="popular-weather-city-block">
+                  <a href="" class="popular-weather-city-link">
+                    <span class="city-name">London</span>
+                    <span class="land-name">United Kingdom</span>
+                  </a>  
+                </div>
               </div>
             </li>
-            <li class="popular-weather-item">
-              <div class="popular-weather-img-block">
-                <i class="cloud-blue-icon"></i>
-                <span class="city-deg-value">5 &deg;с</span>
+            <li class="popular-weather-item" id="w3">
+              <div class="popular-weather-inside-wrap"> 
+                <div class="popular-weather-img-block">
+                  <i class="cloud-blue-icon"></i>
+                  <span class="city-deg-value">18 &deg;с</span>
+                </div>
+                <div class="popular-weather-city-block">
+                  <a href="" class="popular-weather-city-link">
+                    <span class="city-name">Kiyv</span>
+                    <span class="land-name">Ukraine</span>
+                  </a> 
+                </div>
               </div>
-              <div class="popular-weather-city-block">
-                <a href="" class="popular-weather-city-link">
-                  <span class="city-name">Minsk</span>
-                  <span class="land-name">Belarus</span>
-                </a>
+            </li>
+            <li class="popular-weather-item" id="w4">
+              <div class="popular-weather-inside-wrap"> 
+                <div class="popular-weather-img-block">
+                  <i class="cloud-blue-icon"></i>
+                  <span class="city-deg-value">10 &deg;с</span>
+                </div>
+                <div class="popular-weather-city-block">
+                  <a href="" class="popular-weather-city-link">
+                    <span class="city-name">Moskow</span>
+                    <span class="land-name">Russia</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="popular-weather-item" id="w5">
+              <div class="popular-weather-inside-wrap"> 
+                <div class="popular-weather-img-block">
+                  <i class="cloud-blue-icon"></i>
+                  <span class="city-deg-value">5 &deg;с</span>
+                </div>
+                <div class="popular-weather-city-block">
+                  <a href="" class="popular-weather-city-link">
+                    <span class="city-name">Minsk</span>
+                    <span class="land-name">Belarus</span>
+                  </a>
+                </div>
               </div>
             </li>
           </ul>          
@@ -412,7 +422,7 @@
                   <div class="week-info-block">
                     <div class="weater_outlook_menu_trigger visible-xs">Weekly outlook</div>
                     <ul class="nav nav-tabs week-list weather_outlook_header">
-                      <li class="week-item active"><a href="#weekly" class="day-link" data-toggle="tab">Weekly outlook</a></li>
+                      <li class="week-item active" data-toggle="tab"><a href="#weekly" class="day-link" data-toggle="tab">Weekly outlook</a></li>
                       <li class="week-item"><a href="#tue" class="day-link" data-toggle="tab">tue</a></li>
                       <li class="week-item"><a href="#wed" class="day-link" data-toggle="tab">wed</a></li>
                       <li class="week-item"><a href="#thu" class="day-link" data-toggle="tab">thu</a></li>
@@ -421,34 +431,34 @@
                       <li class="week-item"><a href="#sun" class="day-link" data-toggle="tab">sun</a></li>
                       <li class="week-item"><a href="#mon" class="day-link" data-toggle="tab">mon</a></li>
                     </ul>
+                      <div class="tab-content weather_outlook_content">
+                      <div class="tab-pane active" id="weekly">
+                        <p class="tab-pane">The maximum temperature for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th Augustat around 5 pm. In the same week the minimum temperature will be 13°C (or 56°F) on Tuesday 23rd Augustat around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to be the wettest day inthe coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Brighton.</p>
+                      </div>
+                      <div class="tab-pane" id="tue">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit dapibus metus, eu dapibus massa ultrices a. Pellentesque condimentum sodales pharetra. Phasellus at odio ac massa euismod ultrices id id ex. </p>
+                      </div>
+                      <div class="tab-pane" id="wed">
+                        <p>uis commodo quam vel volutpat efficitur. Donec vehicula gravida dui. In ut dapibus velit, vitae mollis lorem. Praesent nec laoreet nisi. Ut accumsan lorem ut metus cursus tempus. </p>
+                      </div>
+                      <div class="tab-pane" id="thu">
+                        <p>Suspendisse potenti. Ut commodo at ante at consectetur. Nunc dapibus faucibus metus ut feugiat. Nulla quis lectus tincidunt, dignissim leo sit amet, fermentum massa. Praesent ultricies tortor nec dui fringilla, sit amet maximus nisl lobortis. </p>
+                      </div>
+                      <div class="tab-pane" id="fri">
+                        <p>Nam aliquet diam ut eros luctus, eget ornare lorem facilisis. Donec a eros semper, elementum urna eu, volutpat lacus. Maecenas blandit, mauris sed convallis sollicitudin, lectus nulla gravida ex, sit </p>
+                      </div>
+                      <div class="tab-pane" id="sat">
+                        <p>tristique metus molestie vel. In in est quis purus efficitur ornare. Pellentesque porta ex ac dui blandit, iaculis ullamcorper enim ultricies. Donec et ipsum eu eros condimentum bibendum. Praesent faucibus lacus nec luctus consequat. </p>
+                      </div>
+                      <div class="tab-pane" id="sun">
+                        <p>Phasellus sed arcu tincidunt nunc molestie condimentum. Mauris et dui congue, volutpat elit sit amet, iaculis diam. Nunc non dolor sed nisi porta aliquam eu a leo. Integer a lacinia turpis. Vestibulum sodales sem a ultrices viverra. Etiam purus odio, aliquam vitae porta sit</p>
+                      </div>
+                      <div class="tab-pane" id="mon">
+                        <p>amet, rutrum ut sem. Morbi id libero ipsum. Quisque nec enim nulla. Vivamus at tellus pulvinar, sollicitudin eros id, luctus sem. Proin accumsan est et neque consectetur, non tempus sapien p</p>
+                      </div>
+                    </div>  
                   </div>
-                </div>
-                  <div class="tab-content weather_outlook_content">
-                    <div class="tab-pane active" id="weekly">
-                      <p class="tab-pane">The maximum temperature for Brighton over the next 7 day will be 30°C(or 86°F) on Wednesday 24th Augustat around 5 pm. In the same week the minimum temperature will be 13°C (or 56°F) on Tuesday 23rd Augustat around 5 am. Our Brighton weather forecaster is reporting Thursday 25th August to be the wettest day inthe coming week with around 2.70mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Brighton.</p>
-                    </div>
-                    <div class="tab-pane" id="tue">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit dapibus metus, eu dapibus massa ultrices a. Pellentesque condimentum sodales pharetra. Phasellus at odio ac massa euismod ultrices id id ex. </p>
-                    </div>
-                    <div class="tab-pane" id="wed">
-                      <p>uis commodo quam vel volutpat efficitur. Donec vehicula gravida dui. In ut dapibus velit, vitae mollis lorem. Praesent nec laoreet nisi. Ut accumsan lorem ut metus cursus tempus. </p>
-                    </div>
-                    <div class="tab-pane" id="thu">
-                      <p>Suspendisse potenti. Ut commodo at ante at consectetur. Nunc dapibus faucibus metus ut feugiat. Nulla quis lectus tincidunt, dignissim leo sit amet, fermentum massa. Praesent ultricies tortor nec dui fringilla, sit amet maximus nisl lobortis. </p>
-                    </div>
-                    <div class="tab-pane" id="fri">
-                      <p>Nam aliquet diam ut eros luctus, eget ornare lorem facilisis. Donec a eros semper, elementum urna eu, volutpat lacus. Maecenas blandit, mauris sed convallis sollicitudin, lectus nulla gravida ex, sit </p>
-                    </div>
-                    <div class="tab-pane" id="sat">
-                      <p>tristique metus molestie vel. In in est quis purus efficitur ornare. Pellentesque porta ex ac dui blandit, iaculis ullamcorper enim ultricies. Donec et ipsum eu eros condimentum bibendum. Praesent faucibus lacus nec luctus consequat. </p>
-                    </div>
-                    <div class="tab-pane" id="sun">
-                      <p>Phasellus sed arcu tincidunt nunc molestie condimentum. Mauris et dui congue, volutpat elit sit amet, iaculis diam. Nunc non dolor sed nisi porta aliquam eu a leo. Integer a lacinia turpis. Vestibulum sodales sem a ultrices viverra. Etiam purus odio, aliquam vitae porta sit</p>
-                    </div>
-                    <div class="tab-pane" id="mon">
-                      <p>amet, rutrum ut sem. Morbi id libero ipsum. Quisque nec enim nulla. Vivamus at tellus pulvinar, sollicitudin eros id, luctus sem. Proin accumsan est et neque consectetur, non tempus sapien p</p>
-                    </div>
-                  </div>  
+                </div>                  
               </div>
             </div>
 
@@ -533,17 +543,17 @@
               <div class="top-city-wrap">
                 <h2 class="title">Top holiday destinations</h2>
                 <div class="top-city-block">
-                  <a href="" class="top-city-link">Kiyv</a>
-                  <a href="" class="top-city-link">London</a>
-                  <a href="" class="top-city-link">Santiago</a>
-                  <a href="" class="top-city-link">New York</a>
-                  <a href="" class="top-city-link">Kiyv</a>
-                  <a href="" class="top-city-link">London</a>
-                  <a href="" class="top-city-link">Santiago</a>
-                  <a href="" class="top-city-link">New York</a>
-                  <a href="" class="top-city-link">Kiyv</a>
-                  <a href="" class="top-city-link">London</a>
-                  <a href="" class="top-city-link">Santiago</a>
+                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">New York</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">New York</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">Kiyv</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">London</a><span class="sep">/</span>
+                  <a href="" class="top-city-link">Santiago</a><span class="sep">/</span>
                   <a href="" class="top-city-link">New York</a>
                 </div>
               </div> 

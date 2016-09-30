@@ -1,0 +1,19 @@
+$icon-font-path: '../fonts/';
+
+@media only screen and (max-width:768px) {
+	
+	.popular-weather-list {
+
+		.popular-weather-inside-wrap {
+			width: 140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+	}
+
+}
+

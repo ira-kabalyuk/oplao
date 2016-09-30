@@ -46,6 +46,45 @@ $icon-font-path: '../fonts/';
   
 }
 
+/*----------------------------------section 3-----------------------------------------*/
+	
+	.popular-weather-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.popular-weather-item {
+			padding: 23px 28px;	
+		}
+
+	}	
+	
+	.popular-weather-item {	
+		display: flex;	
+		justify-content: flex-start;
+		align-items: center;
+		padding: 23px 28px;			
+
+		.popular-weather-inside-wrap {
+			width: 100%;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+		}
+
+	}			
+
+		.city-name {
+			display: inline-block;
+		}
+
+		.land-name {
+			display: inline-block;
+		}
+
+	/*----------------------------------section 3 end-----------------------------------------*/
+
 
 	/*---------------------------------------section-5-------------------------------*/
 

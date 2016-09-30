@@ -43,6 +43,7 @@ body {
 	font-weight: 400;
 	color: #fff;
 	margin-bottom: 9px;
+	white-space: nowrap;
 }
 
 	.location-description {
@@ -114,14 +115,9 @@ body {
 		display: none;
 		position: absolute;
 		top: 40px;
-		z-index:100
-	}
+		z-index:100;
 
-	.visible{
-		display: block;
-	}
-
-	.location_submenu li {
+		li {
 		font-size:14px;
 		font-family:  firasans-book, Arial, sans-serif;
 		padding:0 15px 0 20px;
@@ -132,7 +128,22 @@ body {
 			cursor: pointer;
 		}
 
-			.close{
+	}
+
+		.close_block {
+			background: url('../images/triangle.png') 50% 50% no-repeat;			
+			padding:30px;
+
+		&:hover {
+			background: url('../images/triangle3.png');
+			background-color: #ebebeb;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			}
+
+		}
+
+		.close{
 			float: right;
 			width:10px;
 			height:10px;
@@ -143,22 +154,28 @@ body {
 			opacity:1;
 		}
 
-		div{
+		div {
 			margin-right:15px;
 			padding:15px 0 15px 0;	
 		}		
 
 	}
 
+	.visible{
+		display: block;
+	}
+
+	
+
 	.current {
 		color: #0880d5;
 		}	
 
-	.location_submenu li:hover .close{
+	.location_submenu li:hover .close {
 		background-position: 0  -10px;
 		opacity: 1;
 	}
-	
+
 	
 
 	/*.location-button-icon {
@@ -171,7 +188,7 @@ body {
 	.search-button, .location-button {
 		background: #fff;
 		border:none;
-		border-left: 1px solid #e3e3e3;
+		//border-left: 1px solid #e3e3e3;
 		padding: 10px 0;
 		width: 13%;
 	}
@@ -466,8 +483,36 @@ body {
 /*----------------------------------------section-3-------------------------------------*/
 
 .popular-weather-list {
-	display: flex;
-	align-items: center;	
+	display: table;
+	width: 100%;	
+	border-right: 1px solid #ebebeb;
+
+	.popular-weather-item {
+		display: table-cell;
+		width: auto;
+		padding: 18px 0;
+		text-align: center;
+
+		&:last-child {
+		border-right: none;
+		}
+
+	}
+
+	.popular-weather-inside-wrap {
+		width: 190px;
+		margin: 0 auto;
+	}
+
+	.popular-weather-img-block {
+		text-align: center;
+		display: inline-block;
+	}
+
+	.popular-weather-city-block {
+		display: inline-block;
+	}
+
 }
 
 .popular-weather-item {
@@ -490,14 +535,16 @@ body {
 
 	.popular-weather-img-block {
 		width: 60px;
+		//display: inline-block;
 	}
 
 	.cloud-blue-icon {
-		background: url(../images/cloudy-color-gray.svg) no-repeat;
+		background: url(../images/cloudy-color-gray.svg) 50% 50% no-repeat;
 		background-size: 30px 19px;
 		width: 30px;
 		height: 19px;
-		display: block;
+		display: inline-block;
+		text-align: center;
 		vertical-align: middle;
 		margin-bottom: 7px;
 	}
@@ -507,11 +554,9 @@ body {
 		font-weight: 500;
 		color: #0880d5;
 		text-transform: uppercase;
+		display: block;
 	}
-
-	.popular-weather-city-block {
-		
-	}
+	
 
 	.popular-weather-city-link {
 		color: #4c4c4c;
@@ -701,6 +746,7 @@ body {
 		border: none;
 		background: transparent;
 		border-radius: 0;
+		box-shadow: none;
 		padding: 0;
 		width: 100%;
 		height: 100%;
@@ -711,19 +757,22 @@ body {
 	}
 
 	&:hover .day-link	{
-		color: #07d289;		
+		color: #07d289;	
+		box-shadow: none;	
 	}
 
 	&:active .day-link,
 	&:focus .day-link{
 		color: #07d289;
 		border-top: none;
+		box-shadow: none;
 	}
 
 }
 
 .week-item.active {
 	border: none;
+	box-shadow: none;
 	background: linear-gradient(to right, #00db9e, #00e895);
 	color: #fff;
 	text-transform: uppercase;
@@ -736,6 +785,7 @@ body {
 	display: inline-block;
 
 		.day-link {
+			box-shadow: none;
 			color: #fff;
 			background: transparent;
 			border: none;
@@ -795,23 +845,20 @@ body {
 
 	&:hover {
 		color: #0880d5;
-	}
+		text-decoration: underline;	
 
-	&:after {
-		content: "/";
-		color: #c9c9c9;
-		padding: 0 10px;
-		line-height: 1.5em;
-	}
-
-	&:last-child{
-
-		&:after {
-			content: "";
-		}
 	}
 
 }
+
+.sep {		
+		color: #c9c9c9;
+		padding: 0 10px;
+		line-height: 1.5em;
+		text-decoration: none;	
+		font-weight: 300;
+		display: inline-block;
+	}	
 
 .pm-link {
 	display: flex;
