@@ -1,9 +1,11 @@
 jQuery(function(){
- 	$("#alerts").on('hidden.bs.modal', function (e) {
- 		$("#settings").modal("show");
- 	});
  	$("#show-settings").click(function(){
- 		$("#alerts").modal("hide")
+	 	var alerts = $("#alerts");
+	 	alerts.on('hidden.bs.modal', function (e) {
+	 		$("#settings").modal("show");
+	 		alerts.off('hidden.bs.modal');
+	 	});
+ 		alerts.modal("hide")
  	})
 
 
