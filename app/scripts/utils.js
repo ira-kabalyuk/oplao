@@ -22,20 +22,20 @@ $(document).ready(function(){
 	});	
 	
 	$(".weater_outlook_menu_trigger").click(function(){	
-		$(".weather_outlook_header").toggleClass("visible")		
+		$(".week-list").toggleClass("visible")		
 	});	
 	
-	$(".weather_outlook_header li a").click(function(){	
+	$(".week-list li a").click(function(){	
 		var text;
 		text = $(this).html();		
 		$(".weater_outlook_menu_trigger").html(text);
 	});	
 	
 	$(document).click(function (e){ 
-		var div = $(".weather_menu_container"); 		
+		var div = $(".week-info-block"); 		
 		if (!div.is(e.target) 
 			&& div.has(e.target).length === 0) { 							
-			$(".weather_outlook_header").removeClass("visible");			
+			$(".week-list").removeClass("visible");			
 		}				
 	});	
 	

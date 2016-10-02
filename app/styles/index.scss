@@ -820,14 +820,16 @@ body {
 	text-align: center;
 	width: 100%;
 	padding: 13px 20px 11px 20px;
-	display: none;
+	position: relative;
+	
 
 	&:after {
-		content: ''; 
+		content: '';
+		//background: url(../images/eye-blue.svg) no-repeat;
     position: absolute;
     border-left: 5px solid transparent;
 		border-right: 5px solid transparent;
-		border-top: 8px solid white; 
+		border-top: 8px solid #fff; 
 		top: 16px;
 		right: 20px;
 	}

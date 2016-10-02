@@ -18,6 +18,14 @@ $icon-font-path: '../fonts/';
 		width: 70%;
 	}
 
+	.settings-item {
+		width: 25%;
+	}
+
+	.menu-button-wrap {
+		justify-content: center;
+	}
+
 	.options-label {
 		display: none;
 	}	
@@ -61,6 +69,39 @@ $icon-font-path: '../fonts/';
   }
 
 }
+
+.week-info-block {
+
+	.week-list {
+	display: none;
+	background: #ebebeb;
+
+
+	.week-item {
+		width: 100%;
+		border-right: none;
+		padding: 0 20px;
+
+
+		&:first-child {
+			width: 100%;
+		}
+
+		.day-link {
+			justify-content: flex-start;
+
+		}
+	}
+
+}
+
+.week-list.visible {
+	display: block;
+}	
+
+}
+
+
 
 /*----------------------------------section 3-----------------------------------------*/
 	

@@ -4,6 +4,10 @@ $icon-font-path: '../fonts/';
 
 	/*-------------------header------------------------*/
 
+	.logo-block {
+		margin-right: 18px;
+	}
+
 	.menu-block {
 		width: 100%;
 	}
@@ -11,6 +15,10 @@ $icon-font-path: '../fonts/';
 	.settings-list {
 		//width: calc(100% - 72px);
 		width: 100%;
+	}
+
+	.settings-item {
+		width: 25%;
 	}	
 
 	/*---------------section-4-----------------------------------------*/
