@@ -89,12 +89,12 @@ $(document).ready(function(){
 	});
 	$(".hidden_grad").click(function() {		
 		temp = $(".hidden_grad").html()
-		$('.hidden_grad').html($(".menu_list .grad").html());	
+		$('.hidden_grad').html($(".grad").html());	
 		$('.grad').html(temp);	
 	});
 	
 	$(document).click(function (e){ 
-		var div = $(".switch_button "); 		
+		var div = $(".mobile-select"); 		
 		if (!div.is(e.target) 
 			&& div.has(e.target).length === 0) { 							
 			$(".hidden_grad").removeClass("visible");			
