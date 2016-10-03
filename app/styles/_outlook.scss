@@ -1,6 +1,63 @@
 $icon-font-path: '../fonts/';
 
-.outlook-page {
+.page {	
+		
+	.popular-weather-wrap {
+		margin-top: 74px;
+	}
+
+	.popular-weather-list {
+		border-right: 1px solid #1499df;
+	}
+
+	.popular-weather-item {
+		border-left: 1px solid #1499df;
+		padding: 0;
+	}
+
+	.popular-weather-city-link {
+		color: #fff;
+	}
+
+	.popular-weather-link-wrap {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 23px 10px;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.2);
+
+			.popular-weather-city-link {
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	.city-deg-value {
+		color: #fff;
+	}
+
+
+	.cloud-white-icon {
+	    background: url(../images/cloudy-color-white.svg) 50% 50% no-repeat;
+	    background-size: 30px 19px;
+	    width: 30px;
+	    height: 19px;
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    margin-bottom: 7px;
+	}	
+
+	.land-name {
+		color: #93caeb;
+
+	}
 
 }
 

@@ -276,7 +276,34 @@ $icon-font-path: '../fonts/';
 		border-left: 1px solid #3b4248;
 	}
 
+	/*-----------------OUTLOOK------------------------------------------*/
 
+	.page {
+
+		.popular-weather-list {
+			border-right: none;
+		}
+
+		.popular-weather-item {
+				padding: 0;
+				border-right: none;
+				border-left: none;
+				border-bottom: 1px solid #006ebf;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+			}
+
+			.popular-weather-link-wrap {				
+				padding: 9px 28px;
+				justify-content: flex-start;
+			}
+
+	}	
+
+	/*-----------------OUTLOOK end------------------------------------------*/
 	
 }	
 
