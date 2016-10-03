@@ -85,6 +85,7 @@ $icon-font-path: '../fonts/';
 	height: 18px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 20px;
 }
 
 
@@ -92,8 +93,7 @@ $icon-font-path: '../fonts/';
 .feedback-title {
 	font-size: 14px;
 	font-weight: 400;
-	text-transform: uppercase;
-	padding-left: 20px;
+	text-transform: uppercase;	
 	vertical-align: middle;
 	line-height: 18px;
 }

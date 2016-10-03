@@ -93,6 +93,13 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	.week-item.active {
+		border: 1px solid #00e895;
+	    border-radius: 0;
+	    background: #00e895;
+	    color: white;
+	}
+
 }
 
 .week-list.visible {
@@ -111,16 +118,24 @@ $icon-font-path: '../fonts/';
 		align-items: center;
 
 		.popular-weather-item {
-			padding: 23px 28px;	
+			padding: 9px 28px;
+			display: flex;
+			align-items: center;	
 		}
 
-	}	
+		.popular-weather-img-block {
+			text-align: left;
+		}	
+
+	}
+
+	
 	
 	.popular-weather-item {	
 		display: flex;	
 		justify-content: flex-start;
 		align-items: center;
-		padding: 23px 28px;			
+		padding: 9px 28px;			
 
 		.popular-weather-inside-wrap {
 			width: 100%;
@@ -139,6 +154,8 @@ $icon-font-path: '../fonts/';
 		.land-name {
 			display: inline-block;
 		}
+
+
 
 	/*----------------------------------section 3 end-----------------------------------------*/
 
