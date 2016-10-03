@@ -46,22 +46,22 @@ $icon-font-path: '../fonts/';
   display: flex;
   align-items: center;
   //width: calc(100% - 110px);
-  width: 66%;
+  width: 72%;
   justify-content: flex-end;
 }
 
 .menu-list {
-  display: flex;
-  align-items: center;
+  display: table;
+  text-align: center;
   width: 50%;
-  justify-content: space-around;
+  vertical-align: middle;
 }
 
 .menu-item {      
    height: 60px;   
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
    //padding: 0 24px;
     //width: 33.3%;
    
