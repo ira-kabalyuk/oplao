@@ -188,6 +188,64 @@ $icon-font-path: '../fonts/';
 	}
 
 	/*--------------------------------------section-5 end------------------------------------*/	
+
+	/*-----------------OUTLOOK------------------------------------------*/
+
+	.page {
+
+		.popular-weather-wrap {
+			margin-top: 45px;
+		}
+
+		.popular-weather-list {
+			border-right: none;			
+		}
+
+		.popular-weather-item {
+				padding: 0;
+				border-right: none;
+				border-left: none;
+				border-bottom: 1px solid #006ebf;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+			}
+
+			.popular-weather-link-wrap {				
+				padding: 9px 28px;
+				justify-content: flex-start;
+			}
+
+			.weather_schedule_container {
+				display: none;
+			}
+
+			.weather_schedule_list,
+			.weather_schedule_list.days {
+				display: block;	
+				padding: 0 18px;
+				border-left: none;
+				border-bottom: none;				
+
+			li {
+				display: block;
+				width: 100%;
+				border-right: none;
+				border-bottom: 1px solid #ebebeb;
+
+				a {
+					padding: 15px 28px;
+				}
+
+			}
+
+		}
+
+	}	
+
+	/*-----------------OUTLOOK end------------------------------------------*/
 	
 }	
 

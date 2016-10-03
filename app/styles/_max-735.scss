@@ -278,28 +278,11 @@ $icon-font-path: '../fonts/';
 
 	/*-----------------OUTLOOK------------------------------------------*/
 
-	.page {
+	.page {		
 
-		.popular-weather-list {
-			border-right: none;
-		}
-
-		.popular-weather-item {
-				padding: 0;
-				border-right: none;
-				border-left: none;
-				border-bottom: 1px solid #006ebf;
-
-				&:last-child {
-					border-bottom: none;
-				}
-
-			}
-
-			.popular-weather-link-wrap {				
-				padding: 9px 28px;
-				justify-content: flex-start;
-			}
+		.popular-weather-item {				
+				border-right: none;				
+			}			
 
 	}	
 

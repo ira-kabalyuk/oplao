@@ -220,17 +220,34 @@
               </a>
             </li>
           </ul>          
-        </div>
-        
+        </div>        
       </div>
     </section>
 
     <section class="section-2">
-      
+      <div class="weather_schedule_trigger visible-xs">Outlook</div>
+      <div class="weather_schedule_container">    
+        <ul class="weather_schedule_list">
+          <li><a href="#">Outlook</a></li>
+          <li><a href="#" class="current">Today</a></li>
+          <li><a href="#">tomorrow</a></li>
+          <li><a href="#">past weather</a></li>
+          <li><a href="#">Temperature map</a></li>
+        </ul>
+        <ul class="weather_schedule_list days">
+          <li><a href="#">3 day</a></li>
+          <li><a href="#">5 day</a></li>
+          <li><a href="#">7 day</a></li>
+          <li><a href="#">10 day</a></li>
+          <li><a href="#">14 day</a></li>
+          <li><a href="#">hour by hour</a></li>
+        </ul> 
+      </div>  
     </section>
 
     <section class="section-3">
-      <div class="pagewrap">        
+      <div class="pagewrap">
+
       </div>
     </section>
 
@@ -239,13 +256,42 @@
         <div class="content-wrap">
           <div class="left-column">
             <div class="content-block">
-              <h1 class="content-title">Temperature map</h1>
-              <div class="title-block">
-                <i class="eye-blue-icon"></i>
-                <a href= "" class="title-text">View map</a>
-              </div>
-              <div class="map-block">
-                <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-31.728515624999996%2C40.34654412118006%2C20.56640625%2C60.4788788301667&amp;layer=mapnik"></iframe>
+              <h1 class="content-title">Weather now</h1>
+              <div class="weather-wrap">
+                <div class="now-weather-block">
+                  <div class="weather-img-block">
+                    <img class="weather-img" src="images/weather-2.png" alt="">
+                  </div>
+                  <div class="weather-text-block">
+                    <span class="weather-text">18</span>
+                    <sup class="deg-c">&#8451;</sup>
+                    <sup class="deg-f">/75&#8457;</sup>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <ul class="info-list">
+                    <li class="info-item">
+                      <i class="feels-icon"></i>
+                      <span class="info-item-text">Feels like &mdash; </span>
+                      <span class="info">24 &#8451;</span>
+                    </li>
+                     <li class="info-item">
+                      <i class="humidity-icon"></i>
+                      <span class="info-item-text">Humidity &mdash; </span>
+                      <span class="info">94%</span>
+                    </li>
+                     <li class="info-item">
+                      <i class="pressure-icon"></i>
+                      <span class="info-item-text">Pressure &mdash; </span>
+                      <span class="info">1017 hPa</span>
+                    </li>
+                     <li class="info-item">
+                      <i class="wind-icon"></i>
+                      <span class="info-item-text">Wind &mdash; </span>
+                      <span class="info">0 m/c</span>
+                    </li>
+                  </ul>
+                </div>                
               </div>
             </div>
             <div class="content-block">
