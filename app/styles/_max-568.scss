@@ -21,14 +21,18 @@ $icon-font-path: '../fonts/';
 		width: 25%;
 	}
 
-	.submenu {		
+	.submenu {	
+
+		.footer-list-wrap {
+			padding: 10px 18px;
+		}
 
 		.footer-item.footer-item-title {
-			margin-bottom: 8px;
+			margin: 8px auto 8px 0;
 		}
 
 		.footer-item {
-			margin-bottom: 3px;
+			margin-bottom: 2px;
 
 			.footer-link {
 				font-size: 13px;

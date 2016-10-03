@@ -13,6 +13,18 @@ body {
 	margin: 0 auto;
 }
 
+.blur{
+	overflow-x: hidden;
+}
+
+.the-blur{	
+   -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
 /*--------------------------------------------section-1------------------------------*/
 
 .header {
@@ -814,6 +826,7 @@ body {
 	font-weight: 300;
 	line-height: 1.5em;
 	margin-top: 27px;
+	min-height: 121px;
 }
 
 .weater_outlook_menu_trigger {
