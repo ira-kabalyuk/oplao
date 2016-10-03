@@ -19,7 +19,16 @@ $icon-font-path: '../fonts/';
 		.footer-list-wrap {
 			display: block;
 			overflow: hidden;	
-			overflow-y: scroll;		
+			overflow-y: scroll;
+			padding: 18px 18px;		
+		}
+
+		.footer-item-title {
+			margin-bottom: 13px;
+		}
+
+		.footer-item {
+			margin-bottom: 10px;
 		}
 	}
 	
