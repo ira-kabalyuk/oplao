@@ -21,6 +21,22 @@ $icon-font-path: '../fonts/';
 		width: 25%;
 	}
 
+	.submenu {		
+
+		.footer-item.footer-item-title {
+			margin-bottom: 8px;
+		}
+
+		.footer-item {
+			margin-bottom: 3px;
+
+			.footer-link {
+				font-size: 13px;
+			}
+		}
+	}
+	
+
 	/*-------------section-3---------------------------------*/
 
 	.popular-weather-item {
