@@ -212,6 +212,9 @@ $icon-font-path: '../fonts/';
 
 	/*------------------------------section-5 end------------------------------------------*/
 
+
+
+
 	/*------------------------------footer------------------------*/
 
 	.feedback-wrap {		
@@ -242,6 +245,22 @@ $icon-font-path: '../fonts/';
 			}
 
 		}
+
+		/*--------------------------astronomy--------------------------*/
+
+	.astronomy-left-list {
+
+		.time-item {
+			display: flex;
+			flex-direction: column;
+			margin-top: 0;
+		}
+
+	}
+
+	.astronomy-wrap {
+		margin-top: 30px;
+	}
 		
 
 	}

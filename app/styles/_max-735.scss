@@ -250,6 +250,47 @@ $icon-font-path: '../fonts/';
 
 	/*---------------------------section-6 end--------------------------------------------*/
 
+	/*--------------outlook-------------------------------*/
+
+
+	.page {
+
+		.index-wrap-list {
+			flex-direction: column;
+		}
+
+		.index-wrap-item {
+			align-items: flex-start;
+			margin-right: 0;
+			margin-top: 15px;
+			width: 100%;			
+
+		}
+
+		.index-wrap-value {
+			font-size: 12px;	
+		}
+
+		.index-value-item {
+
+			.value-text {
+				font-size: 12px;								
+			}
+
+		}
+
+	}
+
+	.right-column {
+
+		.banner-wrap {
+			margin-right: 0;
+		}
+
+	}
+
+	/*--------------outlook end-------------------------------*/
+
 	/*----------------------------footer----------------------------------------*/
 
 	.footer-list-wrap {
@@ -327,9 +368,48 @@ $icon-font-path: '../fonts/';
 
 	.value-day {		
 		width: 30%;
-		font-size: 14px;
+		font-size: 14px;		
+	}
+
+	/*--------------------------astronomy--------------------------*/	
+
+	.astronomy-wrap {
+		flex-direction: column;
+	}
 		
-	}		
+	.astronomy-left-list {
+		border-right: none;
+		width: 100%;
+		justify-content: center;
+		padding-bottom: 20px;
+
+		.time-item {
+			margin-left: 30px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			
+		}
+
+	}
+
+	.astronomy-right-list {
+		width: 100%;
+		padding: 20px 10px 0 10px;
+		flex-wrap: wrap;
+		border-top: 1px solid #ebebeb;
+	}
+
+	.astronomy-right-item {		
+
+		&:first-child {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+	}
 
 	}	
 

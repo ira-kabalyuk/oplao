@@ -510,10 +510,272 @@ $icon-font-path: '../fonts/';
 
 		span {
 			color: #0880d5;
+			font-weight: 400;
 		}
+
+		.bold {
+			color: #4c4c4c;
+			font-weight: 500;
+		}
+
 	}
 
 	/*------------------------------section-4 weather-summary end----------------------------------*/
+
+	/*------------------------------astronomy----------------------------------*/
+
+	.astronomy-wrap {
+		display: flex;		
+		width: 100%;
+		align-items: center;
+		padding: 20px 0;
+		border: 1px solid #ebebeb;
+	}
+
+	.astronomy-left-list {
+		display: flex;		
+		width: 30%;
+		align-items: center;
+		justify-content: space-around;
+		border-right: 1px solid #ebebeb;
+
+		.am-icon {
+			background: url(../images/sunrise-gray.svg) no-repeat;		
+		}
+
+		.pm-icon {
+			background: url(../images/sunset-gray.svg) no-repeat;			
+		}
+
+		.time-text {
+			color: #4c4c4c;
+		}
+
+	}
+
+	.astronomy-wrap {
+		margin-top: 57px;
+	}
+
+	.astronomy-right-list {
+		display: flex;		
+		width: 70%;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		justify-content: space-around;
+		padding: 0 40px;
+	}
+
+	.astronomy-right-item {		
+		//width: 12.5%;
+	}
+
+	.astronomy-icon-gray {
+		width: 30px;
+		height: 30px;
+		background-size: 30px 30px;
+		display: inline-block;
+	}
+
+	.astronomy-right-item.active {
+
+		.astronomy-icon-gray-1 {
+			background: url(../images/moon_1-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-2 {
+			background: url(../images/moon_2-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-3 {
+			background: url(../images/moon_3-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-4 {
+			background: url(../images/moon_4-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-5 {
+			background: url(../images/moon_5-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-6 {
+			background: url(../images/moon_6-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-7 {
+			background: url(../images/moon_7-blue.svg) no-repeat;
+		}
+
+		.astronomy-icon-gray-8 {
+			background: url(../images/moon_8-blue.svg) no-repeat;
+		}
+
+	}
+
+	.astronomy-icon-gray-1 {
+		background: url(../images/moon_1.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-2 {
+		background: url(../images/moon_2.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-3 {
+		background: url(../images/moon_3.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-4 {
+		background: url(../images/moon_4.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-5 {
+		background: url(../images/moon_5.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-6 {
+		background: url(../images/moon_6.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-7 {
+		background: url(../images/moon_7.svg) no-repeat;
+	}
+
+	.astronomy-icon-gray-8 {
+		background: url(../images/moon_8.svg) no-repeat;
+	}
+
+/*------------------------------sastronomy end----------------------------------*/
+
+
+/*-------------green block------------------------------*/
+
+.section-7 {
+	
+	.content-color-block {
+		background: linear-gradient(to right, #00c4a8, #00e4a9);
+
+		.weather-summary-text {
+			height: auto;
+
+		}
+	}
+
+}
+
+/*-------------green block end------------------------------*/
+
+
+/*-----------------index-------------------------------------*/
+
+.index-wrap-list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.index-wrap-item {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.ndex-wrap-value {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.index-wrap-icon {
+	width: 11px;
+	height: 11px;
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.index-wrap-1 {
+	background: #7fbd06;
+}
+
+.index-wrap-2 {
+	background: #fce015;
+}
+
+.index-wrap-3 {
+	background: #fd9400;
+}
+
+.index-wrap-4 {
+	background: #fd1f00;
+}
+
+.index-wrap-5 {
+	background: #9d2da2;
+}
+
+.index-value-list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #ebebeb;
+	height: 100px;
+	margin-top: 35px;
+}
+
+.index-value-item {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-right: 1px solid #ebebeb;
+
+	&:first-child {
+		border-left: 1px solid #ebebeb;
+	}	
+
+	.value-text {
+	font-size: 16px;
+	font-weight: 300;
+	width: auto;
+	}
+
+}
+
+
+
+.item-color-block {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+}
+
+.item-color-block-1 {
+	background: linear-gradient(to right, #5aaf03, #a7cd09);
+}
+
+.item-color-block-2 {
+	background: linear-gradient(to right, #fde419, #fad70b);
+}
+
+.item-color-block-3 {
+	background: linear-gradient(to right, #fea900, #fd6c00);
+}
+
+.item-color-block-4 {
+	background: linear-gradient(to right, #fc3e00, #fd1b00);
+}
+
+.item-color-block-5 {
+	background: linear-gradient(to right, #d11474, #992fa5);
+}
+
+
+/*-------------------------index-end----------------------------*/
+
 }
 
 
