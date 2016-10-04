@@ -93,6 +93,85 @@ $icon-font-path: '../fonts/';
 
 	/*---------------section-4 end-----------------------------------------*/
 
+
+	/*---------------------------OUTLOOK-page--------------------------*/
+
+
+	/*--------------------таблица-----------------------*/
+
+	.page {
+
+		.weather_tabs_trigger {			
+
+			.date {
+				font-size: 11px;
+			}
+
+			.temperature {
+				font-size: 11px;
+			}
+
+		}
+
+		.tabs_header {
+
+			li {
+
+				.date {
+					font-size: 11px;
+				}
+
+				.temperature {
+					font-size: 11px;
+				}
+
+			}	
+
+		}
+
+		.weather_pages {
+
+			.block_row {
+
+				div {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					font-size: 10px;
+				}
+
+				.day_time {
+					font-size: 11px;
+				}
+
+				div {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+
+					img {
+						margin-right: 0;
+						display: block;
+					}
+
+					span {
+						font-size: 12px;
+					}					
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+	/*-------------------------таблица конец----------------------------------*/
+
+	/*---------------------------OUTLOOK-end--------------------------*/
+
 	
 }	
 

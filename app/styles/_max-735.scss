@@ -313,7 +313,23 @@ $icon-font-path: '../fonts/';
 				margin-bottom: 23px;
 			}
 			
-		}		
+		}
+
+	.value-text {		
+		width: 55%;
+		font-size: 14px;
+	}
+
+	.value-num {		
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.value-day {		
+		width: 30%;
+		font-size: 14px;
+		
+	}		
 
 	}	
 

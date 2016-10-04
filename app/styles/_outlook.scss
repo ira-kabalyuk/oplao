@@ -57,7 +57,7 @@ $icon-font-path: '../fonts/';
 	.land-name {
 		color: #93caeb;
 
-	}	
+	}
 
 	.weather_schedule_trigger {
 		margin:0 15px 0 15px;
@@ -155,7 +155,7 @@ $icon-font-path: '../fonts/';
 		}
 
 	.weather-wrap  {
-		padding: 10px 0;
+		padding: 32px 0;
 	}		
 
 	.weather-img {
@@ -241,6 +241,10 @@ $icon-font-path: '../fonts/';
 	.right-column {
 
 		.banner-wrap {
+			padding-top: 0;
+		}
+
+		.banner-lang-wrap {
 			padding-top: 0;
 		}
 
@@ -363,13 +367,16 @@ $icon-font-path: '../fonts/';
 }
 
 .weather_pages {
-	padding-bottom:70px;
+	
+	.tab-pane {
+		margin-top: 0;
+	}
 
 	.block_row {
 		display: flex;
 		width:100%;
 		border-bottom: 1px solid  #ebebeb;
-		padding: 20px 0 20px 0;		
+		padding: 40px 0;		
 		margin:0;
 
 		div {
@@ -434,6 +441,79 @@ $icon-font-path: '../fonts/';
 } 
 
 /*--------------------таблица конец---------------------------------*/
+
+/*----------------график №1-------------------------------------------*/
+
+.content-color-block {
+	background: linear-gradient(to right, #006cab, #00c2f1);
+	padding: 30px 0;
+
+	img {		
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+}
+
+/*----------------график №1 конец-------------------------------------------*/
+
+
+/*---------------------section-4 weather-summary------------------------------------*/
+
+
+	.weather-summary-glance-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.weather-summary-glance-item {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		border-bottom: 1px solid #ebebeb;	
+		padding: 30px 0 20px 0;	
+	}
+
+	.value-text {
+		font-size: 16px;
+		font-weight: 300;
+		color: #4c4c4c;
+		width: 80%;
+	}
+
+	.value-num {
+		font-size: 16px;
+		font-weight: 500;
+		color: #0880d5;
+		width: 10%;
+	}
+
+	.value-day {
+		font-size: 16px;
+		font-weight: 500;
+		color: #4c4c4c;
+		width: 10%;
+		text-transform: uppercase;
+	}
+
+	.weather-summary-text {
+		font-size: 16px;
+		font-weight: 300;
+		color: #4c4c4c;
+		padding-top: 30px;
+		line-height: 1.5em;
+		height: 79px;
+		overflow: hidden;
+
+		span {
+			color: #0880d5;
+		}
+	}
+
+	/*------------------------------section-4 weather-summary end----------------------------------*/
 }
 
 

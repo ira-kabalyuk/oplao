@@ -223,13 +223,26 @@ $icon-font-path: '../fonts/';
 
 	.page {
 
+		.content-block {
+			margin-top: 30px;
+		}
+
 		.now-weather-block {
 			justify-content: center;
 		}
 		
 		.deg-f {
 			color: #b7b7b7;
-		}		
+		}
+
+		.weather_pages {
+
+			.block_row {
+			padding: 20px 0;
+			}
+
+		}
+		
 
 	}
 
