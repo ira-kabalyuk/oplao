@@ -282,7 +282,38 @@ $icon-font-path: '../fonts/';
 
 		.popular-weather-item {				
 				border-right: none;				
-			}			
+			}
+
+			.weather-wrap {
+			flex-direction: column;
+		}
+
+		.now-weather-block {
+			width: 100%;
+			padding-right: 0;
+			border-right: none;
+			align-items: center;
+		}	
+
+		.info-block {
+			width: 100%;
+			padding-left: 0;
+		}
+
+		.info-list {
+			flex-direction: column;
+			justify-content:center;
+			align-items: center;
+		}
+
+		.info-item {
+			width: 190px;			
+
+			&:nth-child(3) {
+				margin-bottom: 23px;
+			}
+			
+		}		
 
 	}	
 
