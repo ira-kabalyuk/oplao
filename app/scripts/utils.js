@@ -111,7 +111,6 @@ $(document).ready(function(){
 	});	
 	
 	
-	
 	$(".location_submenu li div").click(function(){	
 		var text = $(this).html();	
 		var substringArray = text.split(","); 	
@@ -135,7 +134,19 @@ $(document).ready(function(){
 		if ($(this).parent('li').hasClass("w5"))
 		$("#w5").slideUp("slow");		
 		$("#city_name").html(text);	
-	});		
+	});
+
+
+
+	$(".tabs_header .active a").click(function(){	
+		$(".tab-content.weather_pages .tab-pane").slideDown("slow");
+				
+	});	
+	
+	$(".tabs_header .close_block").click(function(){	
+		$(".tab-content.weather_pages").slideUp("slow");				
+	});	
+
 	
 	$(".weather_schedule_trigger").click(function(){	
 		$(".weather_schedule_container").slideToggle("slow");

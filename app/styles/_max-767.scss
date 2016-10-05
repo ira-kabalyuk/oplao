@@ -251,6 +251,69 @@ $icon-font-path: '../fonts/';
 
 		/*------------таблица--------------------------*/
 
+		/*------mob display block------*/
+
+		.tabs_header {
+
+			li {
+				position: relative;
+				display: block;
+
+				.weather_pages {
+					display: block;
+				}
+
+				&:after {				
+		    content: '';
+		    position: absolute;
+		    border-left: 5px solid transparent;
+		    border-right: 5px solid transparent;
+		    border-top: 8px solid #e1e1e1;
+		    top: 50%;
+		    margin-top: -4px;
+		    right: 10px;
+				}
+
+			}
+
+			li.active	{
+				position: relative;
+
+				&:after {
+					 content: '';
+			    position: absolute;
+			    border-left: 5px solid transparent;
+			    border-right: 5px solid transparent;
+			    border-bottom: 8px solid #fff;
+			    border-top: transparent;
+			    top: 50%;
+			    margin-top: -4px;
+			    right: 10px;
+					}
+				}
+					
+
+			.close_block {
+				border-top: 1px solid #00daa9;
+				width: 100%;
+				height: 70px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.close-icon {
+					background: url(..images/close-pointer.png) no-repeat;
+					width: 21px;
+					height: 11px;
+					display: inline-block;
+				}
+
+			}	
+
+		}
+
+	/*------mob display block------*/
+
 		.weather_tabs_trigger {
 			width: 100%;			
 			display: flex;

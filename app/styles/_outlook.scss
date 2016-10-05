@@ -264,6 +264,22 @@ $icon-font-path: '../fonts/';
 	display: none;
 }
 
+/*------mob display none------*/
+
+.tabs_header {
+
+	li {
+
+		.weather_pages {
+			display: none;
+		}
+
+	}	
+
+}
+
+/*------mob display none------*/
+
 .tabs_header {
 	display: flex;
 
