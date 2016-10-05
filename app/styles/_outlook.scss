@@ -4,15 +4,23 @@ $icon-font-path: '../fonts/';
 		
 	.popular-weather-wrap {
 		margin-top: 74px;
+		background: rgba(255, 255, 255, 0.2);
 	}
 
 	.popular-weather-list {
-		border-right: 1px solid #1499df;
+		border-right: none;
+		border-bottom: none;
 	}
 
 	.popular-weather-item {
 		border-left: 1px solid #1499df;
 		padding: 0;
+		border-bottom: none;
+
+		&:first-child {
+			border-left: none;
+		}
+
 	}
 
 	.popular-weather-city-link {
