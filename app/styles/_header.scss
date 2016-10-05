@@ -8,6 +8,11 @@ $icon-font-path: '../fonts/';
     filter: blur(4px);
 }*/
 
+.header {
+  background: url(../images/head-bg.jpg);
+  background-size: cover;
+  position: relative; 
+}
 
 .top-banner-wrap {
   margin: 10px auto;

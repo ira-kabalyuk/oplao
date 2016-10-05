@@ -172,5 +172,5 @@ function ParticleModel(config) {
 
     var pc = new ParticleController({
       numberOfParticles: 20,
-      header: jQuery(document.querySelector('.header'))
+      header: jQuery(document.querySelector('.animation'))
     }).init();

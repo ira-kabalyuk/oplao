@@ -144,7 +144,7 @@ $(document).ready(function(){
 	});	
 	
 	$(".tabs_header .close_block").click(function(){	
-		$(".tab-content.weather_pages").slideUp("slow");				
+		$(".tab-content.weather_pages .tab-pane").slideUp("slow");				
 	});	
 
 	
