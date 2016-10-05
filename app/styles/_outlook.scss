@@ -260,6 +260,10 @@ $icon-font-path: '../fonts/';
 
 /*--------------------таблица---------------------------------*/
 
+.weather_tabs_trigger {
+	display: none;
+}
+
 .tabs_header {
 	display: flex;
 

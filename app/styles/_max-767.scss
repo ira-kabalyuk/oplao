@@ -252,51 +252,11 @@ $icon-font-path: '../fonts/';
 		/*------------таблица--------------------------*/
 
 		.weather_tabs_trigger {
-			width: 100%;
-			//padding: 10px 15px;
-				
-
-			.date {
-				width: 33.3%;
-				height: 100%;
-				float: left;
-				background: linear-gradient(to top right, #00c4a8, #00e4a9);
-				display: inline-block;
-				text-align: center;				
-				vertical-align: middle;				
-				color: #fff;
-				text-transform: uppercase;
-				font-size: 14px;
-				font-weight: 300;
-				line-height: 40px;
-				padding-left: 15px;
-			}
-
-			.icon {			
-				margin-top: 14px;
-				background: url("../images/cloudy-color-gray.svg") 50% 50% no-repeat;
-				text-align: right;
-				height:20px;							
-				width: 33.3%;
-				margin-top: 0;
-				float: left;
-				vertical-align: middle;
-				margin-top: 10px;
-				display: inline-block;
-			}
-
-			.temperature {
-				width: 33.3%;
-				vertical-align: middle;
-				text-align: right;
-				line-height: 40px;
-				position: relative;
-				padding-right: 30px;
-				float: left;
-
-				sup {
-					font-size: 11px;
-				}
+			width: 100%;			
+			display: flex;
+			border-top: 1px solid #ebebeb;
+			border-right: 1px solid #ebebeb;
+			position: relative;
 
 			&:after {				
 		    content: '';
@@ -304,9 +264,55 @@ $icon-font-path: '../fonts/';
 		    border-left: 5px solid transparent;
 		    border-right: 5px solid transparent;
 		    border-top: 8px solid #e1e1e1;
-		    top: 15px;
+		    top: 50%;
+		    margin-top: -4px;
 		    right: 10px;
 				}
+
+
+			.date {
+				width: 42.84%;
+				//height: 100%;
+				//float: left;
+				background: linear-gradient(to top right, #00c4a8, #00e4a9);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;	
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 300;				
+				padding: 30px 5px 30px 0;
+				text-align: center;
+				border-right: 1px solid #ebebeb;
+			}
+
+			.icon {			
+				margin-top: 14px;
+				background: url("../images/cloudy-color-gray.svg") 50% 50% no-repeat;
+				text-align: right;
+				height:20px;							
+				//width: 14.28%;
+				width: 18.56%;
+				margin-top: 0;
+				//float: left;
+				vertical-align: middle;
+				margin-top: 30px;
+				//padding-bottom: 30px;
+				display: inline-block;
+			}
+
+			.temperature {
+				width: 40.6%;
+				vertical-align: middle;
+				text-align: left;				
+				padding-top: 30px;
+				font-size: 16px;
+
+				sup {
+					font-size: 11px;
+				}			
 
 			}			
 
@@ -315,16 +321,16 @@ $icon-font-path: '../fonts/';
 		.tabs_header {
 			flex-direction: column;
 			display: none;
-
+		
 			li {
-				width: 100%;
+				width: 100%;				
 
 				a {
 					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
+					flex-direction: row;					
 					border-right: none;
-					padding: 2px 15px;
+					padding: 20px 5px 20px 0;
+					justify-content: flex-start;
 
 					&:first-child {
 						border-left: none;
@@ -333,11 +339,13 @@ $icon-font-path: '../fonts/';
 					.date {
 						padding: 0;
 						border-bottom: none;
-						width: 33.3%;
+						width: 42.84%;
+						border-right: 1px solid #ebebeb
 					}
 
 					.icon {
-						width: 33.3%;
+						//width: 14.28%;
+						width: 18.56%;
 						padding: 0;
 						margin-top: 0;
 					}
@@ -345,15 +353,15 @@ $icon-font-path: '../fonts/';
 					&:hover {
 
 						.date {
-							border-bottom: none;
+							border-bottom: none;							
 
 						}
 
 				}
 
 				.temperature {
-					width: 33.3%;
-					text-align: right;
+					width: 40.6%;
+					text-align: left;
 					padding-right: 15px;
 				}
 
@@ -381,7 +389,7 @@ $icon-font-path: '../fonts/';
 
 			}							
 
-		}		
+		}	
 
 	}	
 
@@ -462,7 +470,10 @@ $icon-font-path: '../fonts/';
 		font-size: 14px;
 		font-weight: 300;
 		width: 68%;
-
+		
+		sup {
+			font-size: 10px;
+		}
 	}
 
 	.month-temp-num {
