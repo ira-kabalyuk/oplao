@@ -387,6 +387,103 @@ $icon-font-path: '../fonts/';
 
 		/*------------таблица конец--------------------------*/
 
+	.section-5,
+	.section-7 {
+		display: none;
+	}
+
+	/*-----------------mobile section-----------------------------------------*/
+
+	.mobile-section {
+		display: block;
+		margin-top: 30px;
+	}
+
+	.moth-info-block {
+
+		.weater_outlook_menu_trigger {
+			background: linear-gradient(to right, #0072af, #00ccf9);
+			padding: 28px 35px;
+			text-align: left;	
+
+			&:after {
+				top:32px;
+			}			
+
+		}
+
+		.tab-pane {
+			list-style: none;
+			margin-top: 0;
+		}
+
+		.week-list {
+			display: none;			
+		}
+
+		.week-list.visible {
+			display: block;
+
+			.month-link {
+				text-transform: uppercase;
+				text-align: left;
+				font-size: 12px;
+				align-items: flex-start;
+				text-align: left;
+				width: 100%;
+			}
+
+		}		
+
+		.week-item.active {
+			background: #0072af;
+			border: 1px solid #0072af;
+
+			.month-link {
+				background: transparent;
+				border: none;
+				color: #fff;
+				text-align: left;
+			}
+
+		}		
+
+	}
+
+	.month-item {
+		border-bottom: 1px solid #ebebeb;
+		padding: 30px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between
+	}
+
+	.month-temp-value {
+		font-size: 14px;
+		font-weight: 300;
+		width: 68%;
+
+	}
+
+	.month-temp-num {
+		font-size: 16px;
+		font-weight: 500;
+		width: 20%;
+		text-align: right;
+	}
+
+	.month-temp-num.max {
+		color: #f1545d;
+	}
+
+	.month-temp-num.min {
+		color: #1097dc;
+	}
+
+	/*-----------------mobile section end-----------------------------------------*/
+
+
+
 	}	
 
 	/*-----------------OUTLOOK end------------------------------------------*/

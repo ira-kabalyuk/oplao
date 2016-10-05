@@ -1,2 +1,10 @@
 $icon-font-path: '../fonts/';
 
+.rain-icon {
+	background: url(../images/precipitation-gray.svg) no-repeat;
+	background-size: 21px 21px;
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+}
+
