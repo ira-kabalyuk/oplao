@@ -32,8 +32,24 @@ $(document).ready(function(){
 	});	
 
 
-	$(".month_outlook_menu_trigger").click(function(){	
-		$(".month-list").toggleClass("visible")		
+	$(".month_outlook_menu_trigger").click(function(e){	
+		e.stopPropagation();
+		var el = $(".month-list");
+		var body = $("body");
+		el.toggleClass("visible")
+		if(el.hasClass("visible")) {
+			body.on('click', clickHandler)
+		} else {
+			body.off("click", clickHandler)
+		}
+
+		function clickHandler(e) {
+			var target = $(e.target);
+			if(!target.closest(el).length > 0) {
+				el.removeClass("visible");
+				body.off("click", clickHandler)
+			}
+		}
 	});
 	
 	$(".week-list li a").click(function(){	
