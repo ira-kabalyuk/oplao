@@ -288,7 +288,7 @@ $icon-font-path: '../fonts/';
 		align-items: center;
 		
 
-		a {
+		.tabs-inside-wrap {
 			border-radius:0;
 			border-top:1px solid #ebebeb;
 			border-bottom:1px solid #ebebeb;
@@ -296,6 +296,8 @@ $icon-font-path: '../fonts/';
 			color:#4c4c4c;
 			margin:0;
 			width: 100%;
+			padding:10px;
+			cursor: pointer;
 
 			display: flex;
 			justify-content: center;
@@ -316,7 +318,7 @@ $icon-font-path: '../fonts/';
 
 		}
 
-		&:first-child a{
+		&:first-child .tabs-inside-wrap{
 				border-left: 1px solid #ebebeb;
 			}
 
@@ -357,10 +359,11 @@ $icon-font-path: '../fonts/';
 
 	.active {	
 
-		a {			
+		.tabs-inside-wrap {			
 			background: linear-gradient(to top right, #00c4a8, #00e4a9);
 			border-top:1px solid #ebebeb;
 			border-bottom:1px solid #ebebeb;
+
 
 			&:hover {
 				background: linear-gradient(to top right, #00c4a8, #00e4a9);
