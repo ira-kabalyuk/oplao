@@ -48,32 +48,35 @@ function measureScrollbar() {
 		
       $(".tab-pane").hide();
       var activeTab = $(this).attr("rel"); 
-      $("#"+activeTab).fadeIn();		
+      $("#"+activeTab).slideDown();		
 		
       $("ul.tabs li").removeClass("active");
       $(this).addClass("active");
 
-	  $(".tab_drawer_heading").removeClass("d_active");
-	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  $(".tabs_item").removeClass("d_active");
+	  $(".tabs_item[rel^='"+activeTab+"']").addClass("d_active");
 	  
     });
 	/* if in drawer mode */
-	$(".tab_drawer_heading").click(function() {
+	$(".tabs_item").click(function() {
       
       $(".tab-pane").hide();
       var d_activeTab = $(this).attr("rel"); 
-      $("#"+d_activeTab).fadeIn();
+      $("#"+d_activeTab).slideDown();
 	  
-	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tabs_item").removeClass("d_active");
       $(this).addClass("d_active");
 	  
 	  $("ul.tabs li").removeClass("active");
 	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
     });
+
+    $(".tab_content .close_block").click(function(){	
+		$(".tab-pane").slideUp("slow");				
+	});	
 	
 	
 	/* Extra class "tab_last" 
 	   to add border to right side
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
-	

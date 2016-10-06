@@ -272,9 +272,13 @@ $icon-font-path: '../fonts/';
 
 /*------mob display none------*/
 
-.mobile-table-block {
+
+
+.tabs_item {
 	display: none;
 }
+
+
 
 /*------mob display none end------*/
 
@@ -395,11 +399,17 @@ $icon-font-path: '../fonts/';
 
 }
 
-.weather_pages {
-	
-	.tab-pane {
+.tab-pane {
 		margin-top: 0;
+
+		.close_block {
+			display: none;
+		}
+
 	}
+
+.weather_pages {	
+	
 
 	.block_row {
 		display: flex;
