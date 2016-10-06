@@ -260,25 +260,21 @@ $icon-font-path: '../fonts/';
 
 /*--------------------таблица---------------------------------*/
 
+.desctop-table-block {
+	display: block;
+}
+
 .weather_tabs_trigger {
 	display: none;
 }
 
 /*------mob display none------*/
 
-.tabs_header {
-
-	li {
-
-		.weather_pages {
-			display: none;
-		}
-
-	}	
-
+.mobile-table-block {
+	display: none;
 }
 
-/*------mob display none------*/
+/*------mob display none end------*/
 
 .tabs_header {
 	display: flex;

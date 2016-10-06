@@ -251,16 +251,131 @@ $icon-font-path: '../fonts/';
 
 		/*------------таблица--------------------------*/
 
+		.desctop-table-block {
+			display: none;
+		}
+
 		/*------mob display block------*/
+
+		.mobile-table-block {
+			display: block;
 
 		.tabs_header {
 
-			li {
+			.tabs_item {
+				width: 100%;			
+				display: flex;				
+				//flex-direction: column;
+				flex-wrap: wrap;
+				border-bottom: 1px solid #ebebeb;			
 				position: relative;
-				display: block;
+				align-items: center;
+				background: #fff;
+				
+
+				&:after {	
+				background: #fff;			
+		    content: '';
+		    position: absolute;
+		    border-left: 5px solid transparent;
+		    border-right: 5px solid transparent;
+		    border-top: 8px solid #e1e1e1;
+		    top: 50%;
+		    margin-top: -4px;
+		    right: 10px;
+				}
+
+			}
+
+			.tabs_item.collapsed {
+			background: linear-gradient(to top right, #00c4a8, #00e4a9);		
+			
+
+			&:after {	
+				background: transparent;			
+		    content: '';
+		    position: absolute;
+		    border-left: 5px solid transparent;
+		    border-right: 5px solid transparent;
+		    border-bottom: 8px solid #fff;
+		    border-top: 0;
+		    top: 50%;
+		    margin-top: -4px;
+		    right: 10px;
+			}
+
+			.date {
+				background: transparent;
+				position: relative;
+
+				&:after {
+					content: "";
+					border-right: 1px solid #fff;
+					position: absolute;
+					height: 40px;
+					right: 0;
+					top: 50%;
+					margin-top: -20px;
+				}
+				
+			}
+
+			.icon {
+				background: url("../images/cloudy-color-white.svg") 50% 50% no-repeat;
+			}
+
+			.temperature {
+				color: #fff;
+			}
+
+		}	
+
+		
+			.date {				
+				width: 42.84%;
+				height: 70px;				
+				background: linear-gradient(to top right, #00c4a8, #00e4a9);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;	
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 11px;
+				font-weight: 300;				
+				padding: 10px 0;
+				text-align: center;
+				//border-right: 1px solid #ebebeb;
+				border-bottom: none;
+				border-top: none;				
+			}
+
+			.icon {			
+				margin-top: 14px;
+				background: url("../images/cloudy-color-gray.svg") 50% 50% no-repeat;
+				text-align: right;
+				height:20px;				
+				width: 18.56%;
+				margin-top: 0;				
+				vertical-align: middle;				
+				display: inline-block;
+			}
+
+			.temperature {
+				width: 38.6%;
+				vertical-align: middle;
+				text-align: left;				
+				font-size: 16px;
+
+				sup {
+					font-size: 11px;
+				}			
+
+			}		
 
 				.weather_pages {
 					display: block;
+					width: 100%;
 				}
 
 				&:after {				
@@ -274,9 +389,33 @@ $icon-font-path: '../fonts/';
 		    right: 10px;
 				}
 
-			}
+				.tab-pane.collapse {
+					display: none;
+				}
 
-			li.active	{
+				.tab-pane.collapse.in {
+					display: block;
+				}
+
+				.close_block {
+				border-top: 1px solid #00daa9;
+				width: 100%;
+				height: 70px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.close-icon {
+					background: url("../images/close-pointer.png") 50% 50% no-repeat;
+					width: 21px;
+					height: 11px;
+					display: block;
+				}
+
+				}			
+
+
+			.tabs_item.active	{
 				position: relative;
 
 				&:after {
@@ -291,24 +430,8 @@ $icon-font-path: '../fonts/';
 			    right: 10px;
 					}
 				}
-					
 
-			.close_block {
-				border-top: 1px solid #00daa9;
-				width: 100%;
-				height: 70px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-
-				.close-icon {
-					background: url(..images/close-pointer.png) no-repeat;
-					width: 21px;
-					height: 11px;
-					display: inline-block;
-				}
-
-			}	
+			}		
 
 		}
 
@@ -318,6 +441,7 @@ $icon-font-path: '../fonts/';
 			width: 100%;			
 			display: flex;
 			border-top: 1px solid #ebebeb;
+			border-bottom: 1px solid #ebebeb;
 			border-right: 1px solid #ebebeb;
 			position: relative;
 
@@ -367,7 +491,7 @@ $icon-font-path: '../fonts/';
 			}
 
 			.temperature {
-				width: 40.6%;
+				width: 38.6%;
 				vertical-align: middle;
 				text-align: left;				
 				padding-top: 30px;
@@ -386,7 +510,8 @@ $icon-font-path: '../fonts/';
 			display: none;
 		
 			li {
-				width: 100%;				
+				width: 100%;
+
 
 				a {
 					display: flex;
