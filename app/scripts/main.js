@@ -75,7 +75,6 @@ function measureScrollbar() {
 		$(".tab-pane").slideUp("slow");				
 	});	
 	
-	
 	/* Extra class "tab_last" 
 	   to add border to right side
 	   of last tab */

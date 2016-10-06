@@ -409,7 +409,6 @@ $icon-font-path: '../fonts/';
 	}
 
 .weather_pages {	
-	
 
 	.block_row {
 		display: flex;
@@ -550,6 +549,19 @@ $icon-font-path: '../fonts/';
 		span {
 			color: #0880d5;
 			font-weight: 400;
+		}
+
+		a {
+			color: #0880d5;
+			font-weight: 400;
+			text-decoration: none;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #0880d5;				
+				text-decoration: unserline;	
+			}	
 		}
 
 		.bold {

@@ -373,6 +373,8 @@ $icon-font-path: '../fonts/';
 				.weather_pages {
 					display: block;
 					width: 100%;
+					border-right: 1px solid #ebebeb;
+					border-top: 1px solid #ebebeb;
 				}
 
 				&:after {				
