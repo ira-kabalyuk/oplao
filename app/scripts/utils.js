@@ -23,13 +23,26 @@ $(document).ready(function(){
 	
 	$(".weater_outlook_menu_trigger").click(function(){	
 		$(".week-list").toggleClass("visible")		
-	});	
+	});
 	
 	$(".week-list li a").click(function(){	
 		var text;
 		text = $(this).html();		
 		$(".weater_outlook_menu_trigger").html(text);
 	});	
+
+
+	$(".month_outlook_menu_trigger").click(function(){	
+		$(".month-list").toggleClass("visible")		
+	});
+	
+	$(".week-list li a").click(function(){	
+		var text;
+		text = $(this).html();		
+		$(".month_outlook_menu_trigger").html(text);
+	});	
+
+
 	
 	$(document).click(function (e){ 
 		var div = $(".week-info-block"); 		
