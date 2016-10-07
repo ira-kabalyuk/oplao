@@ -577,6 +577,7 @@ $icon-font-path: '../fonts/';
 	.tab-pane {
 			list-style: none;
 			margin-top: 0;
+			min-height: auto;
 
 			.close_block {
 				border-top: 1px solid #00daa9;
@@ -642,7 +643,7 @@ $icon-font-path: '../fonts/';
 				font-size: 13px;
 
 				&:hover {
-					border: transparent;
+					border-color: transparent;
 					background: transparent;
 				}
 			}
@@ -703,6 +704,14 @@ $icon-font-path: '../fonts/';
 
 	.month-temp-num.min {
 		color: #1097dc;
+	}
+
+	.tab-pane-month {
+		display: none;
+	}
+
+	.tab-pane-month.active {
+		display: block;
 	}
 
 	/*-----------------mobile section end-----------------------------------------*/

@@ -401,6 +401,7 @@ $icon-font-path: '../fonts/';
 
 .tab-pane {
 		margin-top: 0;
+		min-height: auto;
 
 		.close_block {
 			display: none;
