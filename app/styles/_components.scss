@@ -8,3 +8,16 @@ $icon-font-path: '../fonts/';
 	display: inline-block;
 }
 
+.p-link {
+	color: #0880d5;
+	font-weight: 400;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #0880d5;				
+		text-decoration: unserline;	
+	}	
+}
+

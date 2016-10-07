@@ -41,7 +41,7 @@ function measureScrollbar() {
  // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab-pane").hide();
-    if(("ul.tabs li").first().is(':visible')) {
+    if($("ul.tabs li").first().is(':visible')) {
     	$(".tab-pane:first").show();
     }
 
@@ -62,10 +62,11 @@ function measureScrollbar() {
 	$(".tabs_item").click(function() {
       	var d_activeTab = $(this).attr("rel"); 
       	if($("#"+d_activeTab).is(':visible')){
-			return;
-		}
+        $("#"+d_activeTab).slideUp();
+	   return;
+	  }
 		$(".tab-pane").slideUp();
-		$("#"+d_activeTab).slideDown();
+		$("#"+d_activeTab).fadeIn();
 
 		$(".tabs_item").removeClass("d_active");
 		$(this).addClass("d_active");

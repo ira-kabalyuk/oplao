@@ -15,10 +15,12 @@ $icon-font-path: '../fonts/';
 	}
 
 	.popular-weather-item {
-		border-left: 1px solid #1499df;
+		border-left: 1px solid #1499df;	
+		border-color:  rgba(255,255,255,.1);
 		padding: 0;
 		border-bottom: none;
-
+		position: relative;
+				
 		&:first-child {
 			border-left: none;
 		}
