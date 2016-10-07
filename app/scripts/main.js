@@ -41,7 +41,9 @@ function measureScrollbar() {
  // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab-pane").hide();
-    $(".tab-pane:first").show();
+    if(("ul.tabs li").first().is(':visible')) {
+    	$(".tab-pane:first").show();
+    }
 
   /* if in tab mode */
     $("ul.tabs li").click(function() {
