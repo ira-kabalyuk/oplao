@@ -47,8 +47,8 @@ function measureScrollbar() {
 
   /* if in tab mode */
     $("ul.tabs li").click(function() {
+      var activeTab = $(this).attr("rel");
       $(".tab-pane").hide();
-      var activeTab = $(this).attr("rel"); 
       $("#"+activeTab).fadeIn();		
 		
       $("ul.tabs li").removeClass("active");
@@ -62,9 +62,12 @@ function measureScrollbar() {
 	$(".tabs_item").click(function() {
       	var d_activeTab = $(this).attr("rel"); 
       	if($("#"+d_activeTab).is(':visible')){
-        $("#"+d_activeTab).slideUp();
-	   return;
-	  }
+
+      		$("#"+d_activeTab).slideUp();
+      		$(this).removeClass('d_active active');
+			return;
+		}
+
 		$(".tab-pane").slideUp();
 		$("#"+d_activeTab).fadeIn();
 
