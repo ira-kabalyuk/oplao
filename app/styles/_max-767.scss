@@ -574,6 +574,10 @@ $icon-font-path: '../fonts/';
 		margin-top: 30px;
 	}
 
+	.tab-pane.first {
+		display: none;
+	}
+
 	.tab-pane {
 			list-style: none;
 			margin-top: 0;

@@ -409,6 +409,10 @@ $icon-font-path: '../fonts/';
 
 	}
 
+.tab-pane.active.first {
+	display: block;
+} 	
+
 .weather_pages {	
 
 	.block_row {

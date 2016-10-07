@@ -47,7 +47,7 @@ function measureScrollbar() {
     $("ul.tabs li").click(function() {
       $(".tab-pane").hide();
       var activeTab = $(this).attr("rel"); 
-      $("#"+activeTab).slideDown();		
+      $("#"+activeTab).fadeIn();		
 		
       $("ul.tabs li").removeClass("active");
       $(this).addClass("active");
