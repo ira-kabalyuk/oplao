@@ -167,10 +167,10 @@ $(document).ready(function(){
 
 
 
-	/*$(".tabs_header .active a").click(function(){	
+	$(".tabs_header .active a").click(function(){	
 		$(".tab-content.weather_pages .tab-pane").slideDown("slow");
 				
-	});	*/
+	});	
 	
 	$(".tabs_header .close_block").click(function(){	
 		$(".tab-content.weather_pages .tab-pane").slideUp("slow");				

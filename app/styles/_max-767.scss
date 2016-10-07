@@ -640,6 +640,11 @@ $icon-font-path: '../fonts/';
 				text-align: left;
 				width: 100%;
 				font-size: 13px;
+
+				&:hover {
+					border: transparent;
+					background: transparent;
+				}
 			}
 
 		}		
