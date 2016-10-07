@@ -45,7 +45,6 @@ function measureScrollbar() {
 
   /* if in tab mode */
     $("ul.tabs li").click(function() {
-		
       $(".tab-pane").hide();
       var activeTab = $(this).attr("rel"); 
       $("#"+activeTab).slideDown();		
@@ -59,16 +58,18 @@ function measureScrollbar() {
     });
 	/* if in drawer mode */
 	$(".tabs_item").click(function() {
-      
-      $(".tab-pane").hide();
-      var d_activeTab = $(this).attr("rel"); 
-      $("#"+d_activeTab).slideDown();
-	  
-	  $(".tabs_item").removeClass("d_active");
-      $(this).addClass("d_active");
-	  
-	  $("ul.tabs li").removeClass("active");
-	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+      	var d_activeTab = $(this).attr("rel"); 
+      	if($("#"+d_activeTab).is(':visible')){
+			return;
+		}
+		$(".tab-pane").slideUp();
+		$("#"+d_activeTab).slideDown();
+
+		$(".tabs_item").removeClass("d_active");
+		$(this).addClass("d_active");
+
+		$("ul.tabs li").removeClass("active");
+		$("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
     });
 
     $(".tab_content .close_block").click(function(){	
